@@ -1,0 +1,135 @@
+version: "2.0"
+
+stories:
+
+- story: greeting snippet
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+
+- story: bye snippet
+  steps:
+  - intent: bye
+  - action: utter_goodbye
+
+
+# - story: sad path 1
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+
+
+# - story: sad path 2
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+
+
+# - story: interactive_story_1
+#   steps:
+#   - intent: faq
+#   - action: utter_faq
+#   - intent: faq
+#   - action: utter_faq
+#   - intent: faq
+#   - action: utter_faq
+
+
+
+
+- story: happy path with chitchat
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: chitchat
+  - action: utter_chitchat
+  - intent: mood_unhappy
+  - action: utter_get_better
+  - intent: faq
+  - action: utter_faq
+  - action: save_qa
+  - intent: change_subject
+  - action: utter_second_topic
+  - intent: faq
+  - action: utter_faq
+  - action: save_qa
+  - intent: faq
+  - action: utter_faq
+  - action: save_qa
+  - intent: wrapping_up
+  - action: utter_intro_eval
+  - action: evaluation_form
+  - active_loop: evaluation_form
+  - active_loop: null
+  - action: utter_thanks
+  - action: action_submit
+  - intent: bye
+  - action: utter_goodbye
+
+- story: happy path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: faq
+  - action: utter_faq
+  - action: save_qa
+  - intent: change_subject
+  - action: utter_second_topic
+  - intent: faq
+  - action: utter_faq
+  - action: save_qa
+  - intent: faq
+  - action: utter_faq
+  - action: save_qa
+  - intent: wrapping_up
+  - action: utter_intro_eval
+  - action: evaluation_form
+  - active_loop: evaluation_form
+  - active_loop: null
+  - action: utter_thanks
+  - action: action_submit
+  - intent: bye
+  - action: utter_goodbye
+
+#
+# - story: happy path 2
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: faq
+#   - action: utter_faq
+#   - intent: faq
+#   - action: utter_faq
+#   - intent: faq
+#   - action: utter_faq
+#   - intent: change_subject
+#   - action: utter_second_topic
+#   - intent: faq
+#   - action: utter_faq
+#   - intent: faq
+#   - action: utter_faq
+#   - intent: wrapping_up
+#   - action: utter_intro_eval
+#   - action: evaluation_form
+#   - active_loop: evaluation_form
+#   - active_loop: null
+#   - action: utter_thanks
+#   - action: action_submit
+#   - intent: bye
+#   - action: utter_goodbye
+#
+#   # easiest case
+# - story: happy path 2
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: wrapping_up
+#   - action: utter_intro_eval
+#   - action: evaluation_form
+#   - active_loop: evaluation_form
+#   - active_loop: null
+#   - action: utter_thanks
+#   - action: action_submit
+#   - intent: bye
+#   - action: utter_goodbye

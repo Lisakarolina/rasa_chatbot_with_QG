@@ -1,0 +1,1060 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - hallo
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: change_subject
+  examples: |
+    - I would like to go to the second subject
+    - What's the second subject?
+    - What's next ?
+    - I would like to switch
+    - I would like to switch subject
+    - I would like to change subject
+    - Can you give me the second topic?
+    - second topic
+    - second subject
+    - 2nd topic
+    - 2nd subject
+    - topic no 2
+    - subject no 2
+    - topic number 2, please
+    - subject numer 2, please
+    - topic numer 2, if you don't mind
+- intent: out_of_scope
+  examples: |
+    - I want to order food
+    - I need to sleep more
+    - 2+2
+    - I'm doing great
+    - I'm not feeling well
+    - I am sad
+    - I don't feel very well
+    - This is not working
+- intent: wrapping_up
+  examples: |
+    - ok, thanks
+    - that's it
+    - I've finished
+    - I'm done
+    - I don't have any more questions
+    - that'll be all
+    - alright, I'm done
+    - anything else?
+    - can I go now?
+    - Am I done?
+    - Are you done?
+    - Do you need me to do something else
+    - that's enough
+    - ok enough
+    - I gotta go
+    - I must go now
+    - Is that all?
+    - Is that it?
+    - I don't have time for more questions
+    - ok then
+    - stop
+    - Can we stop here?
+    - evaluation please
+    - evaluation
+    - Let's go to the evaluation
+    - let's procede with the evaluation
+    - i would like to go on with the evaluation
+    - can i do the evaluation now?
+
+- intent: bye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: chitchat/bot_challenge
+  examples: |
+    - Are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: chitchat/how_are_you
+  examples: |
+    - How are you?
+    - How are you doing?
+    - How's it going?
+    - How do you do?
+    - What's up?
+    - How are you feeling?
+- intent: chitchat/time
+  examples: |
+    - How much time will this take?
+    - Does this take much time?
+    - How much of my time do you need for this?
+    - Does this take long?
+    - Will this take long?
+    - Will this take much of my time?
+- intent: faq/0
+  examples: |
+    - What type of cat can a cat be?
+    - What kind of cats are there?
+    - What kind of cats exist?
+    - What groups of cats are there?
+- intent: faq/1
+  examples: |
+    - What are domestic cats valued by humans?
+    - Why do humans keep cats?
+    - Why do people keep cats as pets?
+    - What are the advantages of keeping cats?
+    - What are cats good for?
+    - Why would you want a cat?
+    - Why would you keep a cat?
+- intent: faq/2
+  examples: |
+    - How many cat breeds are recognized by various cat registries?
+    - How many cat breeds are there?
+    - How many cat breeds exist?
+    - How many cat breeds have been found?
+    - How many cat breeds have been registered?
+- intent: faq/3
+  examples: |
+    - What qualities of the cat are well developed?
+    - At what are cats good at?
+    - Which special qualities do cats have?
+    - What abilities do cats have?
+- intent: faq/4
+  examples: |
+    - What type of communication does Felis catus have?
+    - How do cats communicate?
+    - What is the communication of cats?
+    - What is the cat's form of communication?
+    - What type of communication do cats have?
+- intent: faq/5
+  examples: |
+    - What is the hobby of registered pedigreed cats known as?
+    - How do you call the hobby of keeping registered pedigreed cats?
+    - What is the hobby concerning registered pedigreed cats called?
+- intent: faq/6
+  examples: |
+    - When were cats first domesticated in the Near East?
+    - When did the first domestication of cats happen in the Near East?
+    - When were cats first domesticated?
+- intent: faq/7
+  examples: |
+    - When was veneration given to cats in ancient Egypt?
+    - When were cats revered in Egypt?
+    - When have cats been venerated in ancient Egypt?
+    - When have cats been worhipped in ancient Egypt?
+- intent: faq/8
+  examples: |
+    - How many cats lived in the United Kingdom as of 2019?
+    - How many cats were there in the UK in 2019?
+    - How many cats lived in the UK in 2019?
+- intent: faq/9
+  examples: |
+    - What is the origin of the English word 'cat'?
+    - Where does the English word 'cat' come from?
+    - What is the etymological origin of the word cat?
+    - Where does the word cat come from?
+- intent: faq/10
+  examples: |
+    - What is a male cat called?
+    - How do you call a male cat?
+    - What is the name of a male cat?
+    - What's the term for a male cat?
+- intent: faq/11
+  examples: |
+    - What is an unspayed female called?
+    - How do you call an unspayed female cat?
+    - What is the name of an unspayed female cat?
+    - What's the term for an unspayed female cat?
+- intent: faq/12
+  examples: |
+    - What is a juvenile cat referred to as?
+    - How do you call a juvenile cat?
+    - What is the name of a juvenile cat?
+    - How do you call a young cat?
+    - What's the term for a baby cat?
+- intent: faq/13
+  examples: |
+    - Who proposed the scientific name Felis catus for a domestic cat?
+    - Who introduced the name Felis catus for domestic cats?
+    - Who created the scientific name Felis catus for the domestic cat?
+- intent: faq/14
+  examples: |
+    - What did the domestic cat evolve through?
+    - How did the domestic cat evolve?
+    - How did the domestic cat came to be?
+- intent: faq/15
+  examples: |
+    - The domesticated cat and its closest wild ancestor are what?
+    - What is the chromosome structure of cats?
+- intent: faq/16
+  examples: |
+    - When was the earliest known indication for the taming of an African wildcat?
+    - When was the earliest known taming of a wildcat?
+    - When does the first wildcat seems to have been tamed?
+    - When was the first wildcat tamed?
+- intent: faq/17
+  examples: |
+    - Who contributed to the maternal gene pool of the domestic cat at a later time?
+    - What contributed to the maternal gene pool?
+    - Traces of what can be detected in the maternal gene pool of the cat?
+- intent: faq/18
+  examples: |
+    - When was the earliest known evidence for the occurrence of the domestic cat in Greece?
+    - When did the first cat appear in Greece?
+    - When was the earliest indication of the domestic cat in Greece?
+- intent: faq/19
+  examples: |
+    - Who introduced domestic cats to southern Europe?
+    - How did cats come to southern Europe?
+    - Who brought cats to southern Europe?
+- intent: faq/20
+  examples: |
+    - House cats often mate with what type of cats?
+    - With what kind of cats do house cats often mate?
+    - With what kind of cats do domestic cats often mate?
+    - With what kind of cats do domestic cats often intermingle?
+- intent: faq/21
+  examples: |
+    - What was significantly altered in the process of domestication?
+    - What feature of the wildcat was altered in the process of domestication?
+    - What property of the wildcat was altered in the process of domestication?
+    - What changed when the wildcat was being domesticated?
+- intent: faq/22
+  examples: |
+    - How many genetic disorders do purebred cats show?
+    - How many genetic disorders can be found in purebred cats?
+    - How many genetic disorders are present in purebred cats?
+    - How many genetic disorders have been discovered in purebred cats?
+- intent: faq/23
+  examples: |
+    - What type of cat has a smaller skull and shorter bones than the domestic cat?
+    - How do you call the cat that has a smaller skull and shorter bones than the domestic cat?
+    - Which cat has a smaller skull and shorter bones than the domestic cat?
+- intent: faq/24
+  examples: |
+    - How much do domestic cats typically weigh?
+    - How much do house cats typically weigh?
+    - What is the typical weight of a domestic cat?
+    - What is the average weight of a cat?
+- intent: faq/25
+  examples: |
+    - How many cervical vertebrae do cats have?
+    - How many cervical vertebrae are there in a cat?
+- intent: faq/26
+  examples: |
+    - What account for the cat's spinal mobility and flexibility?
+    - What makes for the cat's spinal mobility and flexibility?
+- intent: faq/27
+  examples: |
+    - How many ribs are attached to the spine?
+    - How many ribs do cats have?
+    - How many ribs does a cat have?
+- intent: faq/28
+  examples: |
+    - What allows cat forelimbs to pass their body through any space into which they can fit their head?
+    - How can a cat pass their body through any space into which they can fit their head?
+    - Which feature lets the cat pass their body through any space into which they can fit their head?
+- intent: faq/29
+  examples: |
+    - What are cats teeth adapted for?
+    - What are cats teeth good for?
+    - What are cats teeth good at?
+    - What purpose do the cats teeth serve?
+    - What are cat's teeth there for?
+- intent: faq/30
+  examples: |
+    - What does a cat deliver when it overpowers its prey?
+    - How does a cat overpower its prey?
+    - How does the cat kill its prey?
+- intent: faq/31
+  examples: |
+    - Where does the cat walk?
+    - What part of the foot does the cat use to walk?
+    - What part of the foot is involved when a cat walks?
+- intent: faq/32
+  examples: |
+    - How does the cat register directly?
+    - How does the cat walk?
+    - What does the walk of a cat look like?
+- intent: faq/33
+  examples: |
+    - What type of claws do cats have?
+    - What properties do the claws of a cat have?
+    - What features do the claws of a cat have?
+- intent: faq/34
+  examples: |
+    - What are the claws sheathed with around the paw's toe pads?
+    - What are the claws covered with around the paw's toe pads?
+    - What are the cat's claws are covered with?
+- intent: faq/35
+  examples: |
+    - Cats can extend their claws in what?
+    - Why can cats extend their claws?
+    - Why do cats extend their claws?
+    - When do cats extend their claws?
+- intent: faq/36
+  examples: |
+    - How many claws do most cats have on their rear paws?
+    - How many claws are on a cat's rear paws?
+    - How many claws does a cat's rear paw have?
+- intent: faq/37
+  examples: |
+    - What is the feature of the front paws thought to be used while jumping?
+    - What is the function of the front paws when jumping?
+    - What is the purpose of the front paws when jumping?
+- intent: faq/38
+  examples: |
+    - What reflects any light that passes through the retina back into the eye?
+- intent: faq/39
+  examples: |
+    - What does a cat's pupils expand to cover at low light?
+    - What does a cat's pupils cover at low light?
+- intent: faq/40
+  examples: |
+    - How many cone cells does the domestic cat have?
+    - How many cone cells are there in a cat's eye?
+    - How many cone cells does the eye of a cat have?
+- intent: faq/41
+  examples: |
+    - In what range is the domestic cat's hearing most acute?
+    - In what acoustic range does the cat's hearing work best?
+    - What is the cat's acoustic range?
+- intent: faq/42
+  examples: |
+    - What frequencies can the domestic cat detect?
+    - What range of frequencies can the cat detect?
+    - Which frequencies can a cat hear?
+- intent: faq/43
+  examples: |
+    - What can the cat detect?
+- intent: faq/44
+  examples: |
+    - How large is the surface of olfactory mucosa?
+    - How big is the surface of the olfactory mucosa?
+    - What are the measures or the olfactory mucosa?
+- intent: faq/45
+  examples: |
+    - What percentage of cats are affected by nepetalactone?
+    - What percentage of cats reacts to nepetalactone?
+    - What percentage of cats responds to nepetalactone?
+    - How many cats react to nepetalactone?
+- intent: faq/46
+  examples: |
+    - What does domestic and wild cats share that keeps their sweet taste buds from binding to sugary molecules?
+    - What in a cat keeps its sweet taste buds from binding to sugary molecules?
+    - What prevents a cats sweet taste buds from binding to sugary molecules?
+- intent: faq/47
+  examples: |
+    - How many movable whiskers do cats have over their body?
+    - How many whiskers do cats have?
+    - How many whiskers are there on a cats body?
+- intent: faq/48
+  examples: |
+    - What gives the cat a better observation point?
+- intent: faq/49
+  examples: |
+    - When does a cat reflexively twist its body and rights itself to land on its feet?
+    - When does a cat twist its body to land on its feet?
+- intent: faq/50
+  examples: |
+    - What is the cat reflex called when a cat falls from a high place?
+    - What is the name of the reflex when a cat falls from a high place?
+    - What is the name of the reflex when a cat falls from height?
+- intent: faq/51
+  examples: |
+    - What is the term for how cats are able to right themselves when falling?
+    - What is the term for the phenomenom that cats are able to right themselves when falling?
+    - What is the term for how cats are landing on their feet when falling?
+- intent: faq/52
+  examples: |
+    - What does the timing of cats' activity mean?
+    - How do cats adapt to human time schedules?
+    - How do cats adapt to humans?
+- intent: faq/53
+  examples: |
+    - How long does the daily duration of sleep vary?
+    - How long do cats sleep daily?
+    - How long do cats sleep during the day?
+    - How long do cats sleep?
+    - How much do cats sleep?
+    - How much do cats sleep on a daily basis?
+- intent: faq/54
+  examples: |
+    - What does the term "cat nap" refer to?
+    - What does the term "cat nap" mean?
+    - What is a cat nap?
+    - What is the meaning of cat nap?
+- intent: faq/55
+  examples: |
+    - What is one way to mark the territories of cats in a colony?
+    - How do cats mark their territory?
+    - How do cats define their territory?
+- intent: faq/56
+  examples: |
+    - Where do cats watch and greet each other without territorial conflicts?
+    - Where do cats interact without territorial conflict?
+    - Where do cats interact peacefully?
+- intent: faq/57
+  examples: |
+    - What type of behavior do some cats have?
+    - How do some cats behave?
+    - How do some cats act?
+- intent: faq/58
+  examples: |
+    - What do domestic cats use vocalizations for?
+    - Why do cats use vocalizations?
+    - Why do cats meow?
+    - What is the purpose of meowing?
+- intent: faq/59
+  examples: |
+    - What indicates hostility?
+    - How can you tell a cat is hostile?
+    - How do you recognize a mad cat?
+    - How do you recognize a hostile cat?
+    - How do you know your cat is hostile?
+    - How do you know your cat is angry?
+- intent: faq/60
+  examples: |
+    - What is a common greeting for cats?
+    - How do cats greet each other?
+    - How do cats greet?
+- intent: faq/61
+  examples: |
+    - What do post-nursing cats often purr as a sign of?
+    - Why do adult cats purr?
+    - What does it mean if an adult cat purrs?
+    - What sentiment does a purring cat display?
+    - Why do cats purr?
+- intent: faq/62
+  examples: |
+    - What do longhaired cats usually regurgitate?
+- intent: faq/63
+  examples: |
+    - What is the most common reason for cat fighting?
+    - What triggers fighting among cats?
+    - What is the reason of cat fights?
+- intent: faq/64
+  examples: |
+    - Who wins most fights in domestic cats?
+    - What cat has the highest chance of winning a fight?
+    - What kind of cat is best placed to win fights among domestic cats?
+- intent: faq/65
+  examples: |
+    - What do cats do in an effort to intimidate their opponent?
+    - How do cats try to intimidate their opponent?
+    - What do cats do to intimidate their opponent?
+- intent: faq/66
+  examples: |
+    - What do fights consist of?
+    - What do cats do when they fight?
+    - What do cat fights include?
+    - How do cat fights look like?
+- intent: faq/67
+  examples: |
+    - Cats throw themselves to the ground in a defensive posture to do what?
+    - What do cats do in a defensive posture?
+- intent: faq/68
+  examples: |
+    - What is probably the main route of transmission of feline immunodeficiency virus?
+    - How is the feline immunodeficiency virus probably transmitted?
+    - What is the way of transmission of the feline immunodeficiency virus?
+- intent: faq/69
+  examples: |
+    - What do cats lap with to draw liquid upwards into their mouths?
+    - What do cats use to draw liquid upwards into their mouths?
+    - What do cats use to draw liquid into their mouth when drinking?
+- intent: faq/70
+  examples: |
+    - How many times a second does the cat lap with the tongue to draw liquid upwards into their mouths?
+    - ow many times a second does a drinking cat lap with the tongue to draw liquid upwards into their mouths?
+- intent: faq/71
+  examples: |
+    - What type of foods do cats dislike?
+    - What type of foods do cats hate?
+    - What food do cats despise?
+    - What foods do cat dislike?
+    - What kind of food do cats dislike
+- intent: faq/72
+  examples: |
+    - What do Cats avoid?
+    - What do cats refuse?
+    - What do cats dislike?
+- intent: faq/73
+  examples: |
+    - What do some cats like to chew on?
+    - What do cats like to chew on?
+    - What do some cats love to chew on?
+- intent: faq/74
+  examples: |
+    - Cats hunt small prey, primarily birds and rodents, and are often used as a form of what?
+- intent: faq/75
+  examples: |
+    - What carnivores prey on cats and other small predators?
+    - Who eats cats?
+    - Who hunts cats?
+- intent: faq/76
+  examples: |
+    - What do cats do with others in the group according to the dominance hierarchy?
+    - How do cats acknoledge the dominance hierarchy in a group?
+    - With what behaviour do cats respect the dominance hierarchy in a group?
+- intent: faq/77
+  examples: |
+    - How many reptiles are killed by feral cats each day?
+    - How many reptiles do feral cats kill every day?
+    - How many reptiles do feral cats kill on a daily basis?
+- intent: faq/78
+  examples: |
+    - What does play mimic?
+    - What does play imitate?
+    - What does play resemble?
+    - What does play reenact?
+- intent: faq/79
+  examples: |
+    - What do cats do with each other and humans?
+    - What do cats like to do?
+    - What is a common activity of cats?
+- intent: faq/80
+  examples: |
+    - What can cats do with play fighting?
+    - Why do cats play fight?
+    - What does play fight practice?
+    - What is the importance of play fight?
+- intent: faq/81
+  examples: |
+    - Why do cats prefer to play with objects that resemble prey?
+    - Why do cats like to play with objects that resemble prey?
+    - Why do cats like to play with little objects?
+- intent: faq/82
+  examples: |
+    - How long are the estrus cycles usually?
+    - How long is an estrus cycle?
+    - How long does an extrus cycle last?
+    - How long is an average estruc cycle?
+- intent: faq/83
+  examples: |
+    - What are male cats called?
+    - How do you call male cats?
+    - What's the term for male cats?
+    - What do you call male cats?
+- intent: faq/84
+  examples: |
+    - How long does the male attempt to mate with the female?
+- intent: faq/85
+  examples: |
+    - What is not always triggered by a single mating?
+    - What is not always the result of a single mating?
+- intent: faq/86
+  examples: |
+    - How long does the morula last after conception?
+    - When does the morula form after conception?
+    - How long after conception does the morula form?
+- intent: faq/87
+  examples: |
+    - At what time do early blastocysts form?
+    - How long after conception do blastocysts form?
+    - At what time after conception do blastocysts form?
+- intent: faq/88
+  examples: |
+    - When are kittens weaned?
+    - At what age are kittens weaned?
+- intent: faq/89
+  examples: |
+    - At what age are kittens ready to go to new homes?
+    - How old should a kitten be to go to a new home?
+    - When should a kitten leave its mother?
+    - When can kitten be given away?
+    - When can I take a kitten form its mother?
+    - When can a kitten leave its mother?
+- intent: faq/90
+  examples: |
+    - What are some of the things that can be prevented by a sex-related surgery?
+    - What kind of behaviour does sterilization prevent?
+    - What kind of behaviour does sterilization abolish?
+    - What kind of behaviour does castration prevent?
+    - What kind of behaviour does castration abolish?
+    - What can be reduced by a sterilization?
+- intent: faq/91
+  examples: |
+    - What percentage of household cats are neutered in the US?
+    - How many cats are neutered in the US?
+    - What is the amount of neutered cats in the US?
+    - What is the quota of neutered cats in the US?
+- intent: faq/92
+  examples: |
+    - What was the average lifespan of pet cats in 1995?
+    - How old did cats get in 1995?
+    - What was the typical lifespan of cats in 1995?
+- intent: faq/93
+  examples: |
+    - What is the oldest known cat?
+    - What is the name of the oldest known cat?
+    - What was the oldest known cat called?
+- intent: faq/94
+  examples: |
+    - What parasites are vaccinated to eliminate?
+    - Against which parasites can you vaccinate?
+    - Against which parasites is there a vaccination?
+    - Against which parasites is it possible to vaccinate?
+- intent: faq/95
+  examples: |
+    - Where does the wildcat live?
+    - Where do wildcats live?
+    - What's the natural environment of wildcats?
+    - What is the habitat of wildcats?
+- intent: faq/96
+  examples: |
+    - Where can Feral cats live?
+    - Where do feral cats live?
+    - What's the natural environment of feral cats?
+    - What is the habitat of feral cats?
+- intent: faq/97
+  examples: |
+    - What are domestic cats that were born in or have reverted to a wild state?
+    - What do domestic cats become that have reverted to a wild state?
+    - What do domestic cats in the wild become?
+- intent: faq/98
+  examples: |
+    - How many feral cats live in the United States?
+    - How many feral cats are there in the United States?
+    - How many feral cats exist in the US?
+    - What's the number of feral cats in the US?
+- intent: faq/99
+  examples: |
+    - What species may live alone, but most are found in large colonies, which occupy a specific territory and are usually associated with a source of food
+- intent: faq/100
+  examples: |
+    - What is one common approach to reducing the feral cat population called?
+    - What is a strategy to reduce feral cat populations called?
+    - What is a strategy to reduce feral cat populations?
+    - What is the name of a common strategy to reduce feral cat populations?
+    - What is the name of a common strategy to reduce the number of feral cats?
+- intent: faq/101
+  examples: |
+    - When was cat pelts outlawed in the United States, Australia, and the European Union?
+    - Since when are cat pelts forbidden in the US, Australia and the EU?
+    - When were cat pelts abolished in the US, Australia and the European Union?
+- intent: faq/102
+  examples: |
+    - Cat pelts have been used for superstitious purposes as part of what?
+    - What superstitious purpose have cats pelts served?
+    - In what superstitious practices have cat pelts been used?
+- intent: faq/103
+  examples: |
+    - What is the global population of domestic cats?
+    - How many cats are there globally?
+    - How many cats are there around the globe?
+    - How many cats are there on a global scale?
+    - How many cats are there?
+    - How many cats exist?
+- intent: faq/104
+  examples: |
+    - Cats can be infected or infested with what?
+    - What are common infections or infestations in cats?
+    - With what can cats be infected?
+    - With what can cats be infested?
+- intent: faq/105
+  examples: |
+    - What are humans more likely to become when they have cats living in their home or in close association?
+- intent: faq/106
+  examples: |
+    - What goddess often depicted in cat form?
+    - Which egyptian goddess was often depicted in cat form?
+    - What is the name of the egyptian goddess in cat form?
+    - What was the egyptian goddess in cat form called?
+    - Which egyptian goddess was often represented as a cat?
+    - Who is the cat-shaped goddess?
+- intent: faq/107
+  examples: |
+    - Where were the dead cats taken to?
+    - Where did Egyptians take their dead cats?
+    - Where did Egyptians bring their dead cats?
+    - To what city did Egyptians bring their dead cats?
+    - Where were dead cats taken to in ancient Egypt?
+    - To what city did ancient Egyptians take their dead cats?
+- intent: faq/108
+  examples: |
+    - What did Aristotle call cats?
+    - What did Aristotle say about cats?
+    - what opinion did Aristotle have about cats?
+    - What's Aristotle's statement about cats?
+- intent: faq/109
+  examples: |
+    - What goddess did the Greeks sync with the Egyptian goddess Bastet?
+    - What goddess did the Greeks syncreticize with Bastet?
+    - What goddess did the greeks merge with Bastet?
+    - Who was the greek equivalent of Bastet?
+    - Which greek goddess was associated witch Bastet?
+    - Which greek goddess was blended with the Egyptian goddess Bastet?
+- intent: faq/110
+  examples: |
+    - Who turns into a cat in Ovid's Metamorphoses?
+    - Who transforms into a cat in Ovid's Metamorphoses?
+    - Who shapeshifts into a cat in Ovid's Metamorphoses?
+    - Who assumes the shape of a cat in Ovid's Metamorphoses?
+    - Who turns into a cat in Ovid?
+- intent: faq/111
+  examples: |
+    - Cats displaced ferrets because they were more enthusiastic hunters of what?
+- intent: faq/112
+  examples: |
+    - What is the name of Muhammad's favorite cat?
+    - What was the name of Mohammed's favourite cat?
+    - How was Mohammed's favourite cat called?
+    - How was Muhammad's favourite cat called?
+    - What is the name of the Prophet's favourite cat?
+- intent: faq/113
+  examples: |
+    - What type of superstitions do many cultures have about cats?
+    - What is the character of superstitions about cats in many cultures?
+    - How can superstitions about cats in many cultures be characterized?
+- intent: faq/114
+  examples: |
+    - When did cats be burnt alive as a form of entertainment?
+    - When were cats burnt as a form of entertainment?
+    - When was cat burning a type of entertainment?
+- intent: faq/115
+  examples: |
+    - How many lives are cats in Italy, Germany, Greece, Brazil and some Spanish-speaking regions?
+    - How many lives do cats have according to some?
+    - How many lives do cats have?
+- intent: faq/116
+  examples: |
+    - What is the Botanical Name of the ficus tree?
+    - What is the botanical term of the weeping fig?
+    - What is the botanical name of the weeping fig?
+    - What is the specialist term for the weeping fig?
+    - What is the latin name of the weeping fig?
+    - What is the latin term of the weeping fig?
+- intent: faq/117
+  examples: |
+    - What type of tree is usually grown as a houseplant?
+- intent: faq/118
+  examples: |
+    - What is the sun exposure of the ficus tree?
+    - How much sun do weeping figs need?
+    - How much light do weeping figs need?
+- intent: faq/119
+  examples: |
+    - What is the soil type of the ficus tree?
+    - What kind of soil does the weeping fig need?
+    - What soil does a weeping fig need?
+- intent: faq/120
+  examples: |
+    - What is the pH of the ficus tree?
+    - Which pH value does the weeping fig need?
+    - Which pH value is suitable for the weeping fig?
+    - Which pH value is appropriate for the weeping fig?
+    - Which pH value does the weeping fig require?
+- intent: faq/121
+  examples: |
+    - What is the Bloom Time?
+    - When does the weeping fig bloom?
+    - When does it bloom?
+- intent: faq/122
+  examples: |
+    - Where is the native area of Weeping fig?
+    - Where is the weeping fig from?
+    - Where does the weeping fig originally grow?
+    - Where does the weeping fig originate?
+    - From where is the weeping fig originally?
+    - To where is the weeping fig native?
+    - Where does the weeping fig come from?
+    - Where does the weeping fig grow naturally?
+- intent: faq/123
+  examples: |
+    - What is the Toxicity of the ficus tree?
+    - How toxic is the weeping fig?
+    - What is the toxicity of the weeping fig?
+- intent: faq/124
+  examples: |
+    - What kind of conditions does weeping fig have a good tolerance for?
+    - What is good for the weeping fig?
+    - Which condition is good for the weeping fig?
+- intent: faq/125
+  examples: |
+    - How tall are weeping figs when grown indoors?
+    - How tall do weeping figs get indoors?
+- intent: faq/126
+  examples: |
+    - How tall are weeping figs in tropical climates?
+    - How tall do weeping figs become in their natural environment?
+    - How tall do weeping figs get outdoors?
+    - How tall can weeping figs get?
+    - How tall do weeping figs get?
+- intent: faq/127
+  examples: |
+    - What is weeping fig one of the best plants for indoors?
+    - What is an advantage of the weeping fig?
+    - What is the use of keeping weeping figs indoors?
+    - What are weeping figs good for?
+- intent: faq/128
+  examples: |
+    - What are some of the top removal rates of weeping fig?
+    - Which substances can the weeping fig remove?
+    - What can the weeping fig remove?
+- intent: faq/129
+  examples: |
+    - How often do weeping figs need to be repotted?
+    - How often do I need to repot the weeping fig?
+    - When do I have to repot the weeping fig?
+    - When do I repot the weeping fig?
+- intent: faq/130
+  examples: |
+    - What kind of potting mix do weeping figs grow in?
+    - What kind of potting mix do weeping figs need?
+    - What kind of potting mix do weeping figs require?
+- intent: faq/131
+  examples: |
+    - When can weeping figs be brought outdoors?
+    - When can I bring my weeping fig outdoors?
+    - When can I put the weeping fig outdoors?
+    - When can the weeping fig be outdoors?
+- intent: faq/132
+  examples: |
+    - What is not explained by other causes sometimes indicates infestation by common pests?
+    - What can be a sign of infestation by common pests?
+    - What can be a sign of infestation in weeping figs?
+- intent: faq/133
+  examples: |
+    - What does the weeping fig need?
+    - What conditions does a weeping fig need?
+- intent: faq/134
+  examples: |
+    - Where is the weeping fig often grown?
+    - Where do I grow my weeping fig?
+- intent: faq/135
+  examples: |
+    - What can a weeping fig drop if it is moved?
+    - What happens if I move the weeping fig?
+- intent: faq/136
+  examples: |
+    - What should you do to a weeping fig?
+- intent: faq/137
+  examples: |
+    - What do weeping figs not require?
+    - What do weeping figs not need?
+    - What's unnecessary with weeping figs?
+- intent: faq/138
+  examples: |
+    - What do plants typically drop at the beginning of the dry season?
+- intent: faq/139
+  examples: |
+    - What temperature is best for the weeping fig?
+    - What temperature does the weeping fig need?
+    - What is the best temperature for the weeping fig?
+- intent: faq/140
+  examples: |
+    - What will suffer if the indoor temperature drops below 70 degrees Fahrenheit?
+- intent: faq/141
+  examples: |
+    - What do weeping figs prefer?
+    - What do weeping figs like?
+    - What do weeping figs need?
+    - What is good for weeping figs?
+- intent: faq/142
+  examples: |
+    - What happens to weeping figs if they become too dry?
+    - What happens if the weeping figs becomes too dry?
+- intent: faq/143
+  examples: |
+    - What type of feeder are ficus plants?
+    - What kind of feeder are weeping figs?
+    - What type of feeder are weeping figs?
+- intent: faq/144
+  examples: |
+    - What kind of pellets do you need to feed your ficus at the beginning of the growing season?
+    - What kind of pellets does the weeping fig need at the beginning of the growing season?
+    - Which pellets does the weeping fig need at the beginning of the growing season?
+- intent: faq/145
+  examples: |
+    - What kind of fertilization will ficus plants benefit from in the spring and summer?
+    - What kind of fertilizer does the weeping fig benefit from in spring and summer?
+- intent: faq/146
+  examples: |
+    - What do you need to supplement your ficus with if you are dropping leaves?
+    - What does the weeping fig need if it is dropping its leaves?
+    - What does the weeping fig lack if it is dropping its leaves?
+- intent: faq/147
+  examples: |
+    - What are ficus plants a concern to those who suffer from?
+    - What health condition is a problem when growing weeping figs?
+- intent: faq/148
+  examples: |
+    - What is in the ficus plant?
+    - What does the weeping fig contain?
+    - What substance does the weeping fig contain?
+- intent: faq/149
+  examples: |
+    - What is ficus less tolerant of than the rubber tree?
+    - In what respect is the weeping fig less toleratn than the rubber tree?
+- intent: faq/150
+  examples: |
+    - Why is a ficus growing more slowly?
+    - What is the reason of the weeping fig growing slowly?
+    - What is the reason of slow growth in a weeping fig?
+    - Why is the weeping fig growing slowly?
+    - What does low growth in a weeping fig mean?
+- intent: faq/151
+  examples: |
+    - What does the repotting requirements depend on?
+    - What does the repotting depend on?
+- intent: faq/152
+  examples: |
+    - How can ficus be grown?
+    - in what form can the weeping fig be grown?
+    - What form can the weeping fig assume?
+- intent: faq/153
+  examples: |
+    - When is it best to take a cutting?
+    - When is the best time to cut the weeping fig?
+    - When am I supposed to cut the weeping fig?
+- intent: faq/154
+  examples: |
+    - What is the size of a cutting that contains at least two sets of leaves from the tip of a healthy branch?
+- intent: faq/155
+  examples: |
+    - How large is the cut below a set of leaves?
+    - How large is the cut below a set of leaves supposed to be?
+    - How large do I have to make the cut?
+- intent: faq/156
+  examples: |
+    - What kind of moss is the end of the cutting in a container filled with?
+- intent: faq/157
+  examples: |
+    - What should you do to the soil if it feels dry at the top of the plant?
+    - What do I have to do if the soil feels dry at the top of the plant?
+- intent: faq/158
+  examples: |
+    - What is necessary if the plant is touching the ceiling or you want to make it smaller or shape it?
+    - What is necessary if the weeping fig is touching the ceiling or you want to make it smaller or shape it?
+    - What do I have to do if the plant is getting too big?
+    - What do I have to do if I want to make the weeping fig smaller?
+    - What do I have to do if I want to shape the weeping fig?
+- intent: faq/159
+  examples: |
+    - What is important when the plant is no longer actively growing?
+    - What do I have to do when the plant is no longer actively growing?
+    - What has to be done when the plant is no longer growing?
+- intent: faq/160
+  examples: |
+    - When does growth diminish in ficus plants?
+    - When do weeping figs stop growing?
+    - When does growing of the weeping fig come to a halt?
+- intent: faq/161
+  examples: |
+    - When can a ficus plant be pruned?
+    - When can I prune the weeping fig?
+    - When is a weeping fig ready to be pruned?
+- intent: faq/162
+  examples: |
+    - What is the latin name of the domestic cat?
+    - What is the biologic term of the cat?
+    - What is the biologic name of the cat?
+    - What is the specialist term for the cat?
+    - What is the latin name of the cat?
+    - What is the latin term of the cat?
+- intent: faq/163
+  examples: |
+    - How big is a cat?
+    - How tall is a cat?
+    - How big can a cat get?
+    - How tall does a cat get?
+- intent: faq/164
+  examples: |
+    - What do cats hunt?
+    - Which animals do cats hunt?
+    - What is prey of the cat?
+- intent: faq/165
+  examples: |
+    - What do cats like to eat?
+    - What do cats eat?
+    - Which food do cats like?
+    - What food is best for my cat?
+    - How should i feed my cat
+- intent: faq/166
+  examples: |
+    - Why do cats play with their prey?
+    - Why do cats play with the mouse?
+    - Why do cats play with mice?
+- intent: faq/167
+  examples: |
+    - How old do cats get?
+    - How old can cats get?
+    - What is the average lifespan of cats?
+    - How old do cats get on average?
+    - How old do cats get typically?
+    - What is the lifespan of cats?
+- intent: faq/168
+  examples: |
+    - How much water do weeping figs need?
+    - How much humidity do weeping figs need?
+    - How much water for the weeping fig?

@@ -1,0 +1,52 @@
+version: "2.0"
+
+rules:
+
+- rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+  steps:
+  - intent: nlu_fallback
+  - action: utter_please_rephrase                      
+
+
+- rule: out-of-scope
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+
+- rule: respond to FAQs
+  steps:
+  - intent: faq
+  - action: utter_faq
+  - action: save_qa
+
+- rule: change subject
+  steps:
+  - intent: change_subject
+  - action: utter_second_topic
+
+- rule: respond to chitchat
+  steps:
+  - intent: chitchat
+  - action: utter_chitchat
+
+- rule: activate form
+  steps:
+  - intent: wrapping_up
+  - action: utter_intro_eval
+  - action: evaluation_form
+  - active_loop: evaluation_form
+
+
+- rule: submit form
+  condition:
+  # Condition that form is active.
+  - active_loop: evaluation_form
+  steps:
+  # Form is deactivated
+  - action: evaluation_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  # What to do once the form closed
+  - action: utter_thanks
+  - action: action_submit

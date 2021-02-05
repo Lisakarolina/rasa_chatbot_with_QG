@@ -1,0 +1,617 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- faq:
+    is_retrieval_intent: true
+- chitchat:
+    is_retrieval_intent: true
+- greet
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- wrapping_up
+- change_subject
+- bye
+
+slots:
+  sensical:
+    type: text
+  informative:
+    type: text
+  compare:
+    type: text
+  sus_1:
+    type: text
+  sus_2:
+    type: text
+  sus_3:
+    type: text
+  sus_4:
+    type: text
+  sus_5:
+    type: text
+  sus_6:
+    type: text
+  sus_7:
+    type: text
+  sus_8:
+    type: text
+  sus_9:
+    type: text
+  sus_10:
+    type: text
+
+actions:
+  - action_submit
+  - save_qa
+
+forms:
+  evaluation_form:
+    sensical:
+      - type: from_text
+    informative:
+      - type: from_text
+    compare:
+      - type: from_text
+    sus_1:
+      - type: from_text
+    sus_2:
+      - type: from_text
+    sus_3:
+      - type: from_text
+    sus_4:
+      - type: from_text
+    sus_5:
+      - type: from_text
+    sus_6:
+      - type: from_text
+    sus_7:
+      - type: from_text
+    sus_8:
+      - type: from_text
+    sus_9:
+      - type: from_text
+    sus_10:
+      - type: from_text
+
+
+responses:
+  utter_please_rephrase:
+  - text: I didn't quite get it. Could you please rephrase? Or ask me something else
+  - text: It seems I can't come up with an answer right now. Please rephrase or ask me something else
+  - text: I'm sorry, I don't have an answer. Do you want to try again and rephrase your question?
+  utter_deny_request:
+  - text: It seems I can't help you here. Ask me something else
+  utter_out_of_scope:
+  - text: I can't help you with that, sorry. Go on and try asking me a question!
+  - text: So sorry, I can't help you here. Ask me something else
+  utter_get_better:
+  - text: I'm sorry to hear that. I hope you'll get better soon.
+  utter_greet:
+  - text: "Hi, so glad you're willing to chat with me. There are two topics to which I can answer questions. Go ahead and ask me. And please tell me when you want to switch to the second topic. First topic: cats. Imagine you had to prepare a little presentation about cats. What would you want to know?"
+    image: "https://images.pexels.com/photos/615369/pexels-photo-615369.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+  utter_intro_eval:
+  - text: Before you go, please help me with the evaluation. Please assign the following statements a number between 1 ("strongly disagree") and 5 ("strongly agree"). If you're undecided, choose 3
+  utter_ask_evaluation_form_sensical:
+  - text: The answers of the chatbot made sense
+    buttons:
+    - title: "1"
+      payload: "1"
+    - title: "2"
+      payload: "2"
+    - title: "3"
+      payload: "3"
+    - title: "4"
+      payload: "4"
+    - title: "5"
+      payload: "5"
+
+  utter_ask_evaluation_form_informative:
+  - text: The answers of the chatbot contained the kind of information I was asking for
+    buttons:
+    - title: "1"
+      payload: "1"
+    - title: "2"
+      payload: "2"
+    - title: "3"
+      payload: "3"
+    - title: "4"
+      payload: "4"
+    - title: "5"
+      payload: "5"
+  utter_ask_evaluation_form_compare:
+  - text: The answers concerning the both topics were of equal quality
+    buttons:
+    - title: "1"
+      payload: "1"
+    - title: "2"
+      payload: "2"
+    - title: "3"
+      payload: "3"
+    - title: "4"
+      payload: "4"
+    - title: "5"
+      payload: "5"
+  utter_ask_evaluation_form_sus_1:
+  - text: I think that I would like to use this chatbot frequently.
+    buttons:
+    - title: "1"
+      payload: "1"
+    - title: "2"
+      payload: "2"
+    - title: "3"
+      payload: "3"
+    - title: "4"
+      payload: "4"
+    - title: "5"
+      payload: "5"
+  utter_ask_evaluation_form_sus_2:
+  - text: I found the chatbot unnecessarily complex.
+    buttons:
+    - title: "1"
+      payload: "1"
+    - title: "2"
+      payload: "2"
+    - title: "3"
+      payload: "3"
+    - title: "4"
+      payload: "4"
+    - title: "5"
+      payload: "5"
+  utter_ask_evaluation_form_sus_3:
+  - text: I thought the chatbot was easy to use.
+    buttons:
+    - title: "1"
+      payload: "1"
+    - title: "2"
+      payload: "2"
+    - title: "3"
+      payload: "3"
+    - title: "4"
+      payload: "4"
+    - title: "5"
+      payload: "5"
+  utter_ask_evaluation_form_sus_4:
+  - text: I think that I would need the support of a technical person to be able to use this chatbot.
+    buttons:
+    - title: "1"
+      payload: "1"
+    - title: "2"
+      payload: "2"
+    - title: "3"
+      payload: "3"
+    - title: "4"
+      payload: "4"
+    - title: "5"
+      payload: "5"
+  utter_ask_evaluation_form_sus_5:
+  - text: I found the various functions in this chatbot were well integrated.
+    buttons:
+    - title: "1"
+      payload: "1"
+    - title: "2"
+      payload: "2"
+    - title: "3"
+      payload: "3"
+    - title: "4"
+      payload: "4"
+    - title: "5"
+      payload: "5"
+  utter_ask_evaluation_form_sus_6:
+  - text: I thought there was too much inconsistency in this chatbot.
+    buttons:
+    - title: "1"
+      payload: "1"
+    - title: "2"
+      payload: "2"
+    - title: "3"
+      payload: "3"
+    - title: "4"
+      payload: "4"
+    - title: "5"
+      payload: "5"
+  utter_ask_evaluation_form_sus_7:
+  - text: I would imagine that most people would learn to use this chatbot very quickly.
+    buttons:
+    - title: "1"
+      payload: "1"
+    - title: "2"
+      payload: "2"
+    - title: "3"
+      payload: "3"
+    - title: "4"
+      payload: "4"
+    - title: "5"
+      payload: "5"
+  utter_ask_evaluation_form_sus_8:
+  - text: I found the chatbot very awkward to use.
+    buttons:
+    - title: "1"
+      payload: "1"
+    - title: "2"
+      payload: "2"
+    - title: "3"
+      payload: "3"
+    - title: "4"
+      payload: "4"
+    - title: "5"
+      payload: "5"
+  utter_ask_evaluation_form_sus_9:
+  - text: I felt very confident using the chatbot.
+    buttons:
+    - title: "1"
+      payload: "1"
+    - title: "2"
+      payload: "2"
+    - title: "3"
+      payload: "3"
+    - title: "4"
+      payload: "4"
+    - title: "5"
+      payload: "5"
+  utter_ask_evaluation_form_sus_10:
+  - text: I needed to learn a lot of things before I could get going with this chatbot.
+    buttons:
+    - title: "1"
+      payload: "1"
+    - title: "2"
+      payload: "2"
+    - title: "3"
+      payload: "3"
+    - title: "4"
+      payload: "4"
+    - title: "5"
+      payload: "5"
+  utter_thanks:
+  - text: Thank you for your evaluation. You can leave now
+  utter_chitchat/bot_challenge:
+  - text: Yes
+  utter_chitchat/how_are_you:
+  - text: I'm fine, thanks.
+  utter_chitchat/time:
+  - text: This will take about 10 minutes.
+  utter_goodbye:
+  - text: Bye
+  utter_second_topic:
+  - text: "OK, here's the second topic: A plant called weeping fig. Imagine you would want to get one for your home. What would you want to know about it?"
+    image: "https://images.pexels.com/photos/4050790/pexels-photo-4050790.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+  utter_faq/0:
+  - text: house cat, a farm cat or a feral cat
+  utter_faq/1:
+  - text: companionship and their ability to hunt rodents
+  utter_faq/2:
+  - text: '60'
+  utter_faq/3:
+  - text: night vision and sense of smell
+  utter_faq/4:
+  - text: vocalizations
+  utter_faq/5:
+  - text: cat fancy
+  utter_faq/6:
+  - text: 7500 BC
+  utter_faq/7:
+  - text: 3100 BC
+  utter_faq/8:
+  - text: 7.3 million
+  utter_faq/9:
+  - text: Old English catt
+  utter_faq/10:
+  - text: a tom or tomcat
+  utter_faq/11:
+  - text: queen
+  utter_faq/12:
+  - text: kitten
+  utter_faq/13:
+  - text: Carl Linnaeus
+  utter_faq/14:
+  - text: artificial selection
+  utter_faq/15:
+  - text: diploid
+  utter_faq/16:
+  - text: 7500–7200 BC
+  utter_faq/17:
+  - text: Wildcats of Egypt
+  utter_faq/18:
+  - text: 1200 BC
+  utter_faq/19:
+  - text: Greek, Phoenician, Carthaginian and Etruscan traders
+  utter_faq/20:
+  - text: feral cats
+  utter_faq/21:
+  - text: ancestral wildcat genome
+  utter_faq/22:
+  - text: more than 20 deleterious genetic disorders
+  utter_faq/23:
+  - text: European wildcat
+  utter_faq/24:
+  - text: between 4 and 5 kg (9 and 11 lb)
+  utter_faq/25:
+  - text: seven
+  utter_faq/26:
+  - text: extra lumbar and thoracic vertebrae
+  utter_faq/27:
+  - text: 13 ribs, the shoulder, and the pelvis
+  utter_faq/28:
+  - text: free-floating clavicle bones
+  utter_faq/29:
+  - text: killing prey and tearing meat
+  utter_faq/30:
+  - text: lethal neck bite
+  utter_faq/31:
+  - text: the toes
+  utter_faq/32:
+  - text: placing each hind paw close to the track of the corresponding fore paw
+  utter_faq/33:
+  - text: protractable and retractable
+  utter_faq/34:
+  - text: the skin and fur
+  utter_faq/35:
+  - text: hunting or self-defense, climbing, kneading, or for extra traction on soft surfaces
+  utter_faq/36:
+  - text: four
+  utter_faq/37:
+  - text: antiskidding device
+  utter_faq/38:
+  - text: tapetum lucidum
+  utter_faq/39:
+  - text: a cat's pupils expand to cover most of the exposed surface of its eyes
+  utter_faq/40:
+  - text: two types
+  utter_faq/41:
+  - text: 500 Hz to 32 kHz
+  utter_faq/42:
+  - text: 55 Hz to 79,000 Hz
+  utter_faq/43:
+  - text: ultrasound
+  utter_faq/44:
+  - text: 5.8 square centimetres
+  utter_faq/45:
+  - text: 70–80%
+  utter_faq/46:
+  - text: taste receptor gene mutation
+  utter_faq/47:
+  - text: dozens
+  utter_faq/48:
+  - text: height
+  utter_faq/49:
+  - text: During a fall from a high place
+  utter_faq/50:
+  - text: righting reflex
+  utter_faq/51:
+  - text: falling cat problem
+  utter_faq/52:
+  - text: house cats may be more active in the morning and evening
+  utter_faq/53:
+  - text: between 12 and 16 hours
+  utter_faq/54:
+  - text: cat's tendency to fall asleep (lightly) for a brief period
+  utter_faq/55:
+  - text: urine spraying
+  utter_faq/56:
+  - text: neutral areas
+  utter_faq/57:
+  - text: poorly socialized
+  utter_faq/58:
+  - text: communication
+  utter_faq/59:
+  - text: flattened ears
+  utter_faq/60:
+  - text: Nose-to-nose touching
+  utter_faq/61:
+  - text: contentment
+  utter_faq/62:
+  - text: hairballs of fur
+  utter_faq/63:
+  - text: competition between two males to mate with a female
+  utter_faq/64:
+  - text: heavier male
+  utter_faq/65:
+  - text: vocalize loudly and bare their teeth
+  utter_faq/66:
+  - text: grappling
+  utter_faq/67:
+  - text: rake their opponent's belly
+  utter_faq/68:
+  - text: bites
+  utter_faq/69:
+  - text: tongue
+  utter_faq/70:
+  - text: four times a second
+  utter_faq/71:
+  - text: they dislike chilled foods
+  utter_faq/72:
+  - text: sweet food and milk
+  utter_faq/73:
+  - text: wool, plastic, cables, paper, string, aluminum foil, or even coal
+  utter_faq/74:
+  - text: pest control
+  utter_faq/75:
+  - text: coyotes
+  utter_faq/76:
+  - text: share excess kill
+  utter_faq/77:
+  - text: '258'
+  utter_faq/78:
+  - text: hunting
+  utter_faq/79:
+  - text: play fighting
+  utter_faq/80:
+  - text: to practice the skills needed for real combat
+  utter_faq/81:
+  - text: close similarity between play and hunting
+  utter_faq/82:
+  - text: 21 days
+  utter_faq/83:
+  - text: tomcats
+  utter_faq/84:
+  - text: 20 to 30 minutes
+  utter_faq/85:
+  - text: ovulation
+  utter_faq/86:
+  - text: 124 hours
+  utter_faq/87:
+  - text: 148 hours
+  utter_faq/88:
+  - text: six and seven weeks of age
+  utter_faq/89:
+  - text: '12'
+  utter_faq/90:
+  - text: aggression, territory marking (spraying urine) in males and yowling (calling) in females
+  utter_faq/91:
+  - text: 80%
+  utter_faq/92:
+  - text: 9.4 years
+  utter_faq/93:
+  - text: Creme Puff
+  utter_faq/94:
+  - text: worms and fleas
+  utter_faq/95:
+  - text: small islands with no human inhabitants
+  utter_faq/96:
+  - text: forests, grasslands, tundra, coastal areas, agricultural land, scrublands, urban areas, and wetlands
+  utter_faq/97:
+  - text: Feral cats
+  utter_faq/98:
+  - text: twenty-five to sixty million
+  utter_faq/99:
+  - text: Feral cats
+  utter_faq/100:
+  - text: trap-neuter-return
+  utter_faq/101:
+  - text: '2007'
+  utter_faq/102:
+  - text: witchcraft
+  utter_faq/103:
+  - text: between 200 million to 600 million
+  utter_faq/104:
+  - text: viruses, bacteria, fungus, protozoans, arthropods or worms
+  utter_faq/105:
+  - text: infected
+  utter_faq/106:
+  - text: Bastet
+  utter_faq/107:
+  - text: Bubastis
+  utter_faq/108:
+  - text: male cats are naturally lecherous
+  utter_faq/109:
+  - text: Artemis
+  utter_faq/110:
+  - text: Diana
+  utter_faq/111:
+  - text: mice
+  utter_faq/112:
+  - text: Muezza
+  utter_faq/113:
+  - text: negative
+  utter_faq/114:
+  - text: mid-16th century France
+  utter_faq/115:
+  - text: seven
+  utter_faq/116:
+  - text: Ficus benjamina
+  utter_faq/117:
+  - text: Evergreen
+  utter_faq/118:
+  - text: Filtered, bright sun
+  utter_faq/119:
+  - text: Rich, fast-draining potting soil
+  utter_faq/120:
+  - text: 'pH: 6.0 to 6.5'
+  utter_faq/121:
+  - text: Rarely blooms indoors
+  utter_faq/122:
+  - text: India, Southeast Asia, Northern Australia
+  utter_faq/123:
+  - text: Non-toxic
+  utter_faq/124:
+  - text: limited light conditions
+  utter_faq/125:
+  - text: 3 to 6 feet
+  utter_faq/126:
+  - text: '60'
+  utter_faq/127:
+  - text: improving air quality
+  utter_faq/128:
+  - text: formaldehyde, benzene, and trichloroethylene
+  utter_faq/129:
+  - text: once per year
+  utter_faq/130:
+  - text: soil-based potting mix
+  utter_faq/131:
+  - text: summer
+  utter_faq/132:
+  - text: Leaf dropping
+  utter_faq/133:
+  - text: a bright room with plenty of indirect light, and perhaps even a little direct sun in the morning
+  utter_faq/134:
+  - text: semi-shady
+  utter_faq/135:
+  - text: leaves
+  utter_faq/136:
+  - text: keep it there
+  utter_faq/137:
+  - text: soil that is especially high in nutrients or organic matter
+  utter_faq/138:
+  - text: leaves
+  utter_faq/139:
+  - text: The weeping fig does best with nighttime temperatures between 65 and 70 degrees Fahrenheit and daytime temperatures between 75 and 85 degrees Fahrenheit.
+  utter_faq/140:
+  - text: weeping figs
+  utter_faq/141:
+  - text: high humidity
+  utter_faq/142:
+  - text: lose their leaves
+  utter_faq/143:
+  - text: heavy feeders
+  utter_faq/144:
+  - text: slow-release pellets
+  utter_faq/145:
+  - text: monthly fertilization
+  utter_faq/146:
+  - text: magnesium and manganese
+  utter_faq/147:
+  - text: latex allergies
+  utter_faq/148:
+  - text: latex
+  utter_faq/149:
+  - text: less tolerant of cold and shade
+  utter_faq/150:
+  - text: low water or low temperatures
+  utter_faq/151:
+  - text: how you are growing the plant
+  utter_faq/152:
+  - text: standards, topiary, braided standards, regular houseplants, and even bonsai
+  utter_faq/153:
+  - text: spring
+  utter_faq/154:
+  - text: 3- to 5-inch
+  utter_faq/155:
+  - text: 1/4 inch
+  utter_faq/156:
+  - text: moistened peat moss
+  utter_faq/157:
+  - text: Moisten the soil if it feels dry at the top
+  utter_faq/158:
+  - text: Trimming ficus trees
+  utter_faq/159:
+  - text: Prune
+  utter_faq/160:
+  - text: fall
+  utter_faq/161:
+  - text: any time during the year
+  utter_faq/162:
+  - text: Felis catus
+  utter_faq/163:
+  - text: It averages about 46 cm (18 in) in head-to-body length and 23–25 cm (9–10 in) in height, with about 30 cm (12 in) long tails. Males are larger than females
+  utter_faq/164:
+  - text: Cats hunt small prey, primarily birds and rodents
+  utter_faq/165:
+  - text: They select food based on its temperature, smell and texture; they dislike chilled foods and respond most strongly to moist foods rich in amino acids, which are similar to meat.
+  utter_faq/166:
+  - text: This cat and mouse behavior is due to an instinctive imperative to ensure that the prey is weak enough to be killed without endangering the cat
+  utter_faq/167:
+  - text: The average lifespan of pet cats has risen in recent decades. In the early 1980s, it was about seven years, rising to 9.4 years in 1995 and 15.1 years in 2018
+  utter_faq/168:
+  - text: Keep the plant steadily moist, but do not allow it to sit in water or it will drop leaves and may develop root rot

@@ -1,0 +1,162 @@
+{'answer': 'house cat, a farm cat or a feral cat', 'question': 'What type of cat can a cat be?'}
+{'answer': 'companionship and their ability to hunt rodents', 'question': 'What are domestic cats valued by humans?'}
+{'answer': '60', 'question': 'How many cat breeds are recognized by various cat registries?'}
+{'answer': 'night vision and sense of smell', 'question': 'What qualities of the cat are well developed?'}
+{'answer': 'vocalizations', 'question': 'What type of communication does Felis catus have?'}
+{'answer': 'cat fancy', 'question': 'What is the hobby of registered pedigreed cats known as?'}
+{'answer': '7500 BC', 'question': 'When were cats first domesticated in the Near East?'}
+{'answer': '3100 BC', 'question': 'When was veneration given to cats in ancient Egypt?'}
+{'answer': '7.3 million', 'question': 'How many cats lived in the United Kingdom as of 2019?'}
+{'answer': 'Old English catt', 'question': "What is the origin of the English word 'cat'?"}
+{'answer': 'a tom or tomcat', 'question': 'What is a male cat called?'}
+{'answer': 'queen', 'question': 'What is an unspayed female called?'}
+{'answer': 'kitten', 'question': 'What is a juvenile cat referred to as?'}
+{'answer': 'Carl Linnaeus', 'question': 'Who proposed the scientific name Felis catus for a domestic cat?'}
+{'answer': 'artificial selection', 'question': 'What did the domestic cat evolve through?'}
+{'answer': 'diploid', 'question': 'The domesticated cat and its closest wild ancestor are what?'}
+{'answer': '7500–7200 BC', 'question': 'When was the earliest known indication for the taming of an African wildcat?'}
+{'answer': 'Wildcats of Egypt', 'question': 'Who contributed to the maternal gene pool of the domestic cat at a later time?'}
+{'answer': '1200 BC', 'question': 'When was the earliest known evidence for the occurrence of the domestic cat in Greece?'}
+{'answer': 'Greek, Phoenician, Carthaginian and Etruscan traders', 'question': 'Who introduced domestic cats to southern Europe?'}
+{'answer': 'feral cats', 'question': 'House cats often mate with what type of cats?'}
+{'answer': 'ancestral wildcat genome', 'question': 'What was significantly altered in the process of domestication?'}
+{'answer': 'more than 20 deleterious genetic disorders', 'question': 'How many genetic disorders do purebred cats show?'}
+{'answer': 'European wildcat', 'question': 'What type of cat has a smaller skull and shorter bones than the domestic cat?'}
+{'answer': 'between 4 and 5 kg (9 and 11 lb)', 'question': 'How much do domestic cats typically weigh?'}
+{'answer': 'seven', 'question': 'How many cervical vertebrae do cats have?'}
+{'answer': 'extra lumbar and thoracic vertebrae', 'question': "What account for the cat's spinal mobility and flexibility?"}
+{'answer': '13 ribs, the shoulder, and the pelvis', 'question': 'How many ribs are attached to the spine?'}
+{'answer': 'free-floating clavicle bones', 'question': 'What allows cat forelimbs to pass their body through any space into which they can fit their head?'}
+{'answer': 'killing prey and tearing meat', 'question': 'What are cats teeth adapted for?'}
+{'answer': 'lethal neck bite', 'question': 'What does a cat deliver when it overpowers its prey?'}
+{'answer': 'the toes', 'question': 'Where does the cat walk?'}
+{'answer': 'placing each hind paw close to the track of the corresponding fore paw', 'question': 'How does the cat register directly?'}
+{'answer': 'protractable and retractable', 'question': 'What type of claws do cats have?'}
+{'answer': 'the skin and fur', 'question': "What are the claws sheathed with around the paw's toe pads?"}
+{'answer': 'hunting or self-defense, climbing, kneading, or for extra traction on soft surfaces', 'question': 'Cats can extend their claws in what?'}
+{'answer': 'four', 'question': 'How many claws do most cats have on their rear paws?'}
+{'answer': 'antiskidding device', 'question': 'What is the feature of the front paws thought to be used while jumping?'}
+{'answer': 'tapetum lucidum', 'question': 'What reflects any light that passes through the retina back into the eye?'}
+{'answer': "a cat's pupils expand to cover most of the exposed surface of its eyes", 'question': "What does a cat's pupils expand to cover at low light?"}
+{'answer': 'two types', 'question': 'How many cone cells does the domestic cat have?'}
+{'answer': '500 Hz to 32 kHz', 'question': "In what range is the domestic cat's hearing most acute?"}
+{'answer': '55 Hz to 79,000 Hz', 'question': 'What frequencies can the domestic cat detect?'}
+{'answer': 'ultrasound', 'question': 'What can the cat detect?'}
+{'answer': '5.8 square centimetres', 'question': 'How large is the surface of olfactory mucosa?'}
+{'answer': '70–80%', 'question': 'What percentage of cats are affected by nepetalactone?'}
+{'answer': 'taste receptor gene mutation', 'question': 'What does domestic and wild cats share that keeps their sweet taste buds from binding to sugary molecules?'}
+{'answer': 'dozens', 'question': 'How many movable whiskers do cats have over their body?'}
+{'answer': 'height', 'question': 'What gives the cat a better observation point?'}
+{'answer': 'During a fall from a high place', 'question': 'When does a cat reflexively twist its body and rights itself to land on its feet?'}
+{'answer': 'righting reflex', 'question': 'What is the cat reflex called when a cat falls from a high place?'}
+{'answer': 'falling cat problem', 'question': 'What is the term for how cats are able to right themselves when falling?'}
+{'answer': 'house cats may be more active in the morning and evening', 'question': "What does the timing of cats' activity mean?"}
+{'answer': 'between 12 and 16 hours', 'question': 'How long does the daily duration of sleep vary?'}
+{'answer': "cat's tendency to fall asleep (lightly) for a brief period", 'question': 'What does the term "cat nap" refer to?'}
+{'answer': 'urine spraying', 'question': 'What is one way to mark the territories of cats in a colony?'}
+{'answer': 'neutral areas', 'question': 'Where do cats watch and greet each other without territorial conflicts?'}
+{'answer': 'poorly socialized', 'question': 'What type of behavior do some cats have?'}
+{'answer': 'communication', 'question': 'What do domestic cats use vocalizations for?'}
+{'answer': 'flattened ears', 'question': 'What indicates hostility?'}
+{'answer': 'Nose-to-nose touching', 'question': 'What is a common greeting for cats?'}
+{'answer': 'contentment', 'question': 'What do post-nursing cats often purr as a sign of?'}
+{'answer': 'hairballs of fur', 'question': 'What do longhaired cats usually regurgitate?'}
+{'answer': 'competition between two males to mate with a female', 'question': 'What is the most common reason for cat fighting?'}
+{'answer': 'heavier male', 'question': 'Who wins most fights in domestic cats?'}
+{'answer': 'vocalize loudly and bare their teeth', 'question': 'What do cats do in an effort to intimidate their opponent?'}
+{'answer': 'grappling', 'question': 'What do fights consist of?'}
+{'answer': "rake their opponent's belly", 'question': 'Cats throw themselves to the ground in a defensive posture to do what?'}
+{'answer': 'bites', 'question': 'What is probably the main route of transmission of feline immunodeficiency virus?'}
+{'answer': 'tongue', 'question': 'What do cats lap with to draw liquid upwards into their mouths?'}
+{'answer': 'four times a second', 'question': 'How many times a second does the cat lap with the tongue to draw liquid upwards into their mouths?'}
+{'answer': 'they dislike chilled foods', 'question': 'What type of foods do cats dislike?'}
+{'answer': 'sweet food and milk', 'question': 'What do Cats avoid?'}
+{'answer': 'wool, plastic, cables, paper, string, aluminum foil, or even coal', 'question': 'What do some cats like to chew on?'}
+{'answer': 'pest control', 'question': 'Cats hunt small prey, primarily birds and rodents, and are often used as a form of what?'}
+{'answer': 'coyotes', 'question': 'What carnivores prey on cats and other small predators?'}
+{'answer': 'share excess kill', 'question': 'What do cats do with others in the group according to the dominance hierarchy?'}
+{'answer': '258', 'question': 'How many reptiles are killed by feral cats each day?'}
+{'answer': 'hunting', 'question': 'What does play mimic?'}
+{'answer': 'play fighting', 'question': 'What do cats do with each other and humans?'}
+{'answer': 'to practice the skills needed for real combat', 'question': 'What can cats do with play fighting?'}
+{'answer': 'close similarity between play and hunting', 'question': 'Why do cats prefer to play with objects that resemble prey?'}
+{'answer': '21 days', 'question': 'How long are the estrus cycles usually?'}
+{'answer': 'tomcats', 'question': 'What are male cats called?'}
+{'answer': '20 to 30 minutes', 'question': 'How long does the male attempt to mate with the female?'}
+{'answer': 'ovulation', 'question': 'What is not always triggered by a single mating?'}
+{'answer': '124 hours', 'question': 'How long does the morula last after conception?'}
+{'answer': '148 hours', 'question': 'At what time do early blastocysts form?'}
+{'answer': 'six and seven weeks of age', 'question': 'When are kittens weaned?'}
+{'answer': '12', 'question': 'At what age are kittens ready to go to new homes?'}
+{'answer': 'aggression, territory marking (spraying urine) in males and yowling (calling) in females', 'question': 'What are some of the things that can be prevented by a sex-related surgery?'}
+{'answer': '80%', 'question': 'What percentage of household cats are neutered in the US?'}
+{'answer': '9.4 years', 'question': 'What was the average lifespan of pet cats in 1995?'}
+{'answer': 'Creme Puff', 'question': 'What is the oldest known cat?'}
+{'answer': 'worms and fleas', 'question': 'What parasites are vaccinated to eliminate?'}
+{'answer': 'small islands with no human inhabitants', 'question': 'Where does the wildcat live?'}
+{'answer': 'forests, grasslands, tundra, coastal areas, agricultural land, scrublands, urban areas, and wetlands', 'question': 'Where can Feral cats live?'}
+{'answer': 'Feral cats', 'question': 'What are domestic cats that were born in or have reverted to a wild state?'}
+{'answer': 'twenty-five to sixty million', 'question': 'How many feral cats live in the United States?'}
+{'answer': 'Feral cats', 'question': 'What species may live alone, but most are found in large colonies, which occupy a specific territory and are usually associated with a source of food'}
+{'answer': 'trap-neuter-return', 'question': 'What is one common approach to reducing the feral cat population called?'}
+{'answer': '2007', 'question': 'When was cat pelts outlawed in the United States, Australia, and the European Union?'}
+{'answer': 'witchcraft', 'question': 'Cat pelts have been used for superstitious purposes as part of what?'}
+{'answer': 'between 200 million to 600 million', 'question': 'What is the global population of domestic cats?'}
+{'answer': 'viruses, bacteria, fungus, protozoans, arthropods or worms', 'question': 'Cats can be infected or infested with what?'}
+{'answer': 'infected', 'question': 'What are humans more likely to become when they have cats living in their home or in close association?'}
+{'answer': 'Bastet', 'question': 'What goddess often depicted in cat form?'}
+{'answer': 'Bubastis', 'question': 'Where were the dead cats taken to?'}
+{'answer': 'male cats are naturally lecherous', 'question': 'What did Aristotle call cats?'}
+{'answer': 'Artemis', 'question': 'What goddess did the Greeks sync with the Egyptian goddess Bastet?'}
+{'answer': 'Diana', 'question': "Who turns into a cat in Ovid's Metamorphoses?"}
+{'answer': 'mice', 'question': 'Cats displaced ferrets because they were more enthusiastic hunters of what?'}
+{'answer': 'Muezza', 'question': "What is the name of Muhammad's favorite cat?"}
+{'answer': 'negative', 'question': 'What type of superstitions do many cultures have about cats?'}
+{'answer': 'mid-16th century France', 'question': 'When did cats be burnt alive as a form of entertainment?'}
+{'answer': 'seven', 'question': 'How many lives are cats in Italy, Germany, Greece, Brazil and some Spanish-speaking regions?'}
+{'answer': 'Ficus benjamina', 'question': 'What is the Botanical Name of the ficus tree?'}
+{'answer': 'Evergreen', 'question': 'What type of tree is usually grown as a houseplant?'}
+{'answer': 'Filtered, bright sun', 'question': 'What is the sun exposure of the ficus tree?'}
+{'answer': 'Rich, fast-draining potting soil', 'question': 'What is the soil type of the ficus tree?'}
+{'answer': 'pH: 6.0 to 6.5', 'question': 'What is the pH of the ficus tree?'}
+{'answer': 'Rarely blooms indoors', 'question': 'What is the Bloom Time?'}
+{'answer': 'India, Southeast Asia, Northern Australia', 'question': 'Where is the native area of Weeping fig?'}
+{'answer': 'Non-toxic', 'question': 'What is the Toxicity of the ficus tree?'}
+{'answer': 'limited light conditions', 'question': 'What kind of conditions does weeping fig have a good tolerance for?'}
+{'answer': '3 to 6 feet', 'question': 'How tall are weeping figs when grown indoors?'}
+{'answer': '60', 'question': 'How tall are weeping figs in tropical climates?'}
+{'answer': 'improving air quality', 'question': 'What is weeping fig one of the best plants for indoors?'}
+{'answer': 'formaldehyde, benzene, and trichloroethylene', 'question': 'What are some of the top removal rates of weeping fig?'}
+{'answer': 'once per year', 'question': 'How often do weeping figs need to be repotted?'}
+{'answer': 'soil-based potting mix', 'question': 'What kind of potting mix do weeping figs grow in?'}
+{'answer': 'summer', 'question': 'When can weeping figs be brought outdoors?'}
+{'answer': 'Leaf dropping', 'question': 'What is not explained by other causes sometimes indicates infestation by common pests?'}
+{'answer': 'a bright room with plenty of indirect light, and perhaps even a little direct sun in the morning', 'question': 'What does the weeping fig need?'}
+{'answer': 'semi-shady', 'question': 'Where is the weeping fig often grown?'}
+{'answer': 'leaves', 'question': 'What can a weeping fig drop if it is moved?'}
+{'answer': 'keep it there', 'question': 'What should you do to a weeping fig?'}
+{'answer': 'soil that is especially high in nutrients or organic matter', 'question': 'What do weeping figs not require?'}
+{'answer': 'leaves', 'question': 'What do plants typically drop at the beginning of the dry season?'}
+{'answer': 'Ficus', 'question': 'What tree does best with nighttime temperatures between 65 and 70 degrees Fahrenheit?'}
+{'answer': 'weeping figs', 'question': 'What will suffer if the indoor temperature drops below 70 degrees Fahrenheit?'}
+{'answer': 'high humidity', 'question': 'What do weeping figs prefer?'}
+{'answer': 'lose their leaves', 'question': 'What happens to weeping figs if they become too dry?'}
+{'answer': 'heavy feeders', 'question': 'What type of feeder are ficus plants?'}
+{'answer': 'slow-release pellets', 'question': 'What kind of pellets do you need to feed your ficus at the beginning of the growing season?'}
+{'answer': 'monthly fertilization', 'question': 'What kind of fertilization will ficus plants benefit from in the spring and summer?'}
+{'answer': 'magnesium and manganese', 'question': 'What do you need to supplement your ficus with if you are dropping leaves?'}
+{'answer': 'latex allergies', 'question': 'What are ficus plants a concern to those who suffer from?'}
+{'answer': 'latex', 'question': 'What is in the ficus plant?'}
+{'answer': 'less tolerant of cold and shade', 'question': 'What is ficus less tolerant of than the rubber tree?'}
+{'answer': 'low water or low temperatures', 'question': 'Why is a ficus growing more slowly?'}
+{'answer': 'how you are growing the plant', 'question': 'What does the repotting requirements depend on?'}
+{'answer': 'standards, topiary, braided standards, regular houseplants, and even bonsai', 'question': 'How can ficus be grown?'}
+{'answer': 'spring', 'question': 'When is it best to take a cutting?'}
+{'answer': '3- to 5-inch', 'question': 'What is the size of a cutting that contains at least two sets of leaves from the tip of a healthy branch?'}
+{'answer': '1/4 inch', 'question': 'How large is the cut below a set of leaves?'}
+{'answer': 'moistened peat moss', 'question': 'What kind of moss is the end of the cutting in a container filled with?'}
+{'answer': 'Moisten the soil if it feels dry at the top', 'question': 'What should you do to the soil if it feels dry at the top of the plant?'}
+{'answer': 'Trimming ficus trees', 'question': 'What is necessary if the plant is touching the ceiling or you want to make it smaller or shape it?'}
+{'answer': 'Prune', 'question': 'What is important when the plant is no longer actively growing?'}
+{'answer': 'fall', 'question': 'When does growth diminish in ficus plants?'}
+{'answer': 'any time during the year', 'question': 'When can a ficus plant be pruned?'}
