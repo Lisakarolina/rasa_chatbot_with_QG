@@ -15,7 +15,6 @@ nlu:
     - goodmorning
     - goodevening
     - hallo
-
 - intent: affirm
   examples: |
     - yes
@@ -93,10 +92,18 @@ nlu:
     - I am sad
     - I don't feel very well
     - This is not working
+    - Whut?
+    - What?
+    - We're talking about the weeping fig.
+    - How much is that in the metric system?
+    - What does this mean?
+    - Why?
 - intent: wrapping_up
   examples: |
     - ok, thanks
     - that's it
+    - I would like to leave
+    - thank you
     - I've finished
     - I'm done
     - I don't have any more questions
@@ -123,7 +130,14 @@ nlu:
     - let's procede with the evaluation
     - i would like to go on with the evaluation
     - can i do the evaluation now?
-
+    - i would like to evaluate
+    - Shall I give you feedback now?
+    - What about the feedback?
+    - When do you want feedback?
+    - What about the evaluation?
+    - Can we go on with the feedback?
+    - feedback
+    - When do you want me to evaluate?
 - intent: bye
   examples: |
     - good afternoon
@@ -137,13 +151,14 @@ nlu:
     - see you around
     - bye bye
     - see you later
-
 - intent: chitchat/bot_challenge
   examples: |
     - Are you a bot?
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+    - Are you a machine?
+    - Am I talking to a machine?
 - intent: chitchat/how_are_you
   examples: |
     - How are you?
@@ -166,6 +181,14 @@ nlu:
     - What kind of cats are there?
     - What kind of cats exist?
     - What groups of cats are there?
+    - What races of cat are there?
+    - How many races of cat are there?
+    - How many groups of cats are there?
+    - What are the different groups of cats?
+    - What are the different races of cats?
+    - Which types of cats exist?
+    - Which types of cats are there?
+    - What are the different types of cats?
 - intent: faq/1
   examples: |
     - What are domestic cats valued by humans?
@@ -175,6 +198,12 @@ nlu:
     - What are cats good for?
     - Why would you want a cat?
     - Why would you keep a cat?
+    - What properties of cats are good for the well-being of humans?
+    - Why keep cats?
+    - What are cats there for?
+    - Why would anyone keep cats?
+    - Why would anyone want cats?
+    - What are the qualities of cats?
 - intent: faq/2
   examples: |
     - How many cat breeds are recognized by various cat registries?
@@ -182,12 +211,22 @@ nlu:
     - How many cat breeds exist?
     - How many cat breeds have been found?
     - How many cat breeds have been registered?
+    - How many cat breeds?
+    - How many breeds exist?
+    - How many breeds have been registered?
+    - What different breeds of cats are there?
 - intent: faq/3
   examples: |
     - What qualities of the cat are well developed?
     - At what are cats good at?
     - Which special qualities do cats have?
     - What abilities do cats have?
+    - What are cats good at?
+    - Cat are competent at what?
+    - What are the positive features of cats?
+    - What are the positive sides of cats?
+    - Which positive properties do cats have?
+    - What are the positive properties of cats?
 - intent: faq/4
   examples: |
     - What type of communication does Felis catus have?
@@ -195,27 +234,48 @@ nlu:
     - What is the communication of cats?
     - What is the cat's form of communication?
     - What type of communication do cats have?
+    - How do they communicate?
+    - What is the typical communication of cats?
+    - In what way do cats communicate?
 - intent: faq/5
   examples: |
     - What is the hobby of registered pedigreed cats known as?
     - How do you call the hobby of keeping registered pedigreed cats?
     - What is the hobby concerning registered pedigreed cats called?
+    - How do you call hobby with pedigreed cats?
+    - What do you call it if your hobby is pedigreed cats?
+    - What is the hobby with pedigreed cats called?
 - intent: faq/6
   examples: |
     - When were cats first domesticated in the Near East?
     - When did the first domestication of cats happen in the Near East?
     - When were cats first domesticated?
+    - when were cats domesticated?
+    - When did the first domestication happen?
+    - When did the first domestication take place?
+    - When did the first domestication happen in the Near East?
+    - When did the first domestication take place in the Near East?
+    - first domestication?
+    - When were the first cats domesticated?
+    - When were the first cats domesticated in the Near East?
 - intent: faq/7
   examples: |
     - When was veneration given to cats in ancient Egypt?
     - When were cats revered in Egypt?
     - When have cats been venerated in ancient Egypt?
     - When have cats been worhipped in ancient Egypt?
+    - When have cats been worshipped in Egypt?
+    - When have cats been venerated in Egypt?
+    - when were cats worshipped in Ancient Egypt?
+    - When were cats venerated in Ancient Egypt?
+    - The worship in ancient Egypt happened when?
 - intent: faq/8
   examples: |
     - How many cats lived in the United Kingdom as of 2019?
     - How many cats were there in the UK in 2019?
     - How many cats lived in the UK in 2019?
+    - How many cats in the UK in 2019?
+    - How many cats were counted in the UK in 2019?
 - intent: faq/9
   examples: |
     - What is the origin of the English word 'cat'?
@@ -228,12 +288,18 @@ nlu:
     - How do you call a male cat?
     - What is the name of a male cat?
     - What's the term for a male cat?
+    - What is the correct word for a male cat?
+    - What is the word for a male cat?
+    - What are male cats called?
+    - What is the expression for a male cat?
 - intent: faq/11
   examples: |
     - What is an unspayed female called?
     - How do you call an unspayed female cat?
     - What is the name of an unspayed female cat?
     - What's the term for an unspayed female cat?
+    - What is the expression for an unspayed female cat?
+    - What is an unspayed female cat called?
 - intent: faq/12
   examples: |
     - What is a juvenile cat referred to as?
@@ -241,11 +307,18 @@ nlu:
     - What is the name of a juvenile cat?
     - How do you call a young cat?
     - What's the term for a baby cat?
+    - what is the word for a baby cat?
+    - What is the expression that describes a baby cat?
+    - What is the word that describes a baby cat?
 - intent: faq/13
   examples: |
     - Who proposed the scientific name Felis catus for a domestic cat?
     - Who introduced the name Felis catus for domestic cats?
     - Who created the scientific name Felis catus for the domestic cat?
+    - What is the name of the man who proposed the scientific name Felis catus for the cat?
+    - What is the name of the man who proposed the scientific name Felis catus for the domestic cat?
+    - what is the name of the person who introduced the name Felis catus for domestic cat?
+    
 - intent: faq/14
   examples: |
     - What did the domestic cat evolve through?
@@ -299,12 +372,19 @@ nlu:
     - What type of cat has a smaller skull and shorter bones than the domestic cat?
     - How do you call the cat that has a smaller skull and shorter bones than the domestic cat?
     - Which cat has a smaller skull and shorter bones than the domestic cat?
+    - Which cat is characterized by a smaller skull and shorter bones than the domestic cat?
+    - which cat can be identified by a smaller skull and shorter bones than the domestic cat?
 - intent: faq/24
   examples: |
     - How much do domestic cats typically weigh?
     - How much do house cats typically weigh?
     - What is the typical weight of a domestic cat?
     - What is the average weight of a cat?
+    - How many Kilograms do cats weigh?
+    - How many Kg do cats weigh?
+    - What is the typical weight of cats in Kilograms?
+    - How many Kilograms?
+    - How many Kg?
 - intent: faq/25
   examples: |
     - How many cervical vertebrae do cats have?
@@ -335,6 +415,7 @@ nlu:
     - What does a cat deliver when it overpowers its prey?
     - How does a cat overpower its prey?
     - How does the cat kill its prey?
+    - How do cats hunt down their prey?
 - intent: faq/31
   examples: |
     - Where does the cat walk?
@@ -458,6 +539,12 @@ nlu:
     - What is one way to mark the territories of cats in a colony?
     - How do cats mark their territory?
     - How do cats define their territory?
+    - What do cats do to mark their territory?
+    - How does territorial marking work with cats?
+    - How do cats do territorial marking?
+    - How do cats show what is their territory?
+    - What do cats do to define their space?
+    - How do cats mark the space where they live?
 - intent: faq/56
   examples: |
     - Where do cats watch and greet each other without territorial conflicts?
@@ -482,6 +569,9 @@ nlu:
     - How do you recognize a hostile cat?
     - How do you know your cat is hostile?
     - How do you know your cat is angry?
+    - How do I know a cat is angry?
+    - How can i tell the cat is mad?
+    - How does an angry cat look like?
 - intent: faq/60
   examples: |
     - What is a common greeting for cats?
@@ -518,6 +608,7 @@ nlu:
     - What do cats do when they fight?
     - What do cat fights include?
     - How do cat fights look like?
+    - How do cats fight?
 - intent: faq/67
   examples: |
     - Cats throw themselves to the ground in a defensive posture to do what?
@@ -542,12 +633,16 @@ nlu:
     - What type of foods do cats hate?
     - What food do cats despise?
     - What foods do cat dislike?
-    - What kind of food do cats dislike
+    - What kind of food do cats dislikew
+    - What food do cats hate?
+    - What food do cats avoid?
+    - What food do cats shy away from?
 - intent: faq/72
   examples: |
     - What do Cats avoid?
     - What do cats refuse?
     - What do cats dislike?
+    - What do cats hate?
 - intent: faq/73
   examples: |
     - What do some cats like to chew on?
@@ -561,6 +656,8 @@ nlu:
     - What carnivores prey on cats and other small predators?
     - Who eats cats?
     - Who hunts cats?
+    - What animals hunt cats?
+    - What enemies do cats have?
 - intent: faq/76
   examples: |
     - What do cats do with others in the group according to the dominance hierarchy?
@@ -588,6 +685,7 @@ nlu:
     - Why do cats play fight?
     - What does play fight practice?
     - What is the importance of play fight?
+    - Why do cats play?
 - intent: faq/81
   examples: |
     - Why do cats prefer to play with objects that resemble prey?
@@ -642,6 +740,9 @@ nlu:
     - What kind of behaviour does castration prevent?
     - What kind of behaviour does castration abolish?
     - What can be reduced by a sterilization?
+    - What does sterilization reduce?
+    - What does castration reduce?
+    - What behaviour can be changed by a sterilization?
 - intent: faq/91
   examples: |
     - What percentage of household cats are neutered in the US?
@@ -658,12 +759,16 @@ nlu:
     - What is the oldest known cat?
     - What is the name of the oldest known cat?
     - What was the oldest known cat called?
+    - what is the oldest cat ever recorded?
+    - The oldest cat?
 - intent: faq/94
   examples: |
     - What parasites are vaccinated to eliminate?
     - Against which parasites can you vaccinate?
     - Against which parasites is there a vaccination?
     - Against which parasites is it possible to vaccinate?
+    - Which vaccinations are possible for cats?
+    - Which vaccinations are necessary for cats?
 - intent: faq/95
   examples: |
     - Where does the wildcat live?
@@ -715,6 +820,16 @@ nlu:
     - How many cats are there on a global scale?
     - How many cats are there?
     - How many cats exist?
+    - What is the number of cats world wide?
+    - What is the number of cats globally?
+    - What is the number of cats on a global scale?
+    - What is the estimate of cats world wide?
+    - What is the estimate of cats globally?
+    - What is the estimate of cats on a global scale?
+    - How can you quantify the global population of cats?
+    - What number can you put to the global population of cats?
+    - How can you quantify the number of cats globally?
+    - How can you quantify the number of cats world wide?
 - intent: faq/104
   examples: |
     - Cats can be infected or infested with what?
@@ -732,6 +847,11 @@ nlu:
     - What was the egyptian goddess in cat form called?
     - Which egyptian goddess was often represented as a cat?
     - Who is the cat-shaped goddess?
+    - who is the egyptioan cat-shaped goddess?
+    - What egyption goddess looked like a cat?
+    - Which egyption goddess had the appearance of a cat?
+    - Which egyption goddess had the physiognomy of a cat?
+    - Which egyptian goddess had the appearance of a cat?
 - intent: faq/107
   examples: |
     - Where were the dead cats taken to?
@@ -771,6 +891,8 @@ nlu:
     - How was Mohammed's favourite cat called?
     - How was Muhammad's favourite cat called?
     - What is the name of the Prophet's favourite cat?
+    - name of the prophet's favorite cat?
+    - How was the prophet's favorite cat called?
 - intent: faq/113
   examples: |
     - What type of superstitions do many cultures have about cats?
@@ -786,6 +908,8 @@ nlu:
     - How many lives are cats in Italy, Germany, Greece, Brazil and some Spanish-speaking regions?
     - How many lives do cats have according to some?
     - How many lives do cats have?
+    - How many lives do cats have according to superstition?
+    - How many lives do cats have according to superstitious beliefs?
 - intent: faq/116
   examples: |
     - What is the Botanical Name of the ficus tree?
@@ -802,11 +926,25 @@ nlu:
     - What is the sun exposure of the ficus tree?
     - How much sun do weeping figs need?
     - How much light do weeping figs need?
+    - How much sunlight exposure does a weeping fig need?
+    - How much sun light does a weeping fig need?
+    - How much sun exposure do weeping figs need?
+    - How much light is necessary for the weeping fig?
+    - How much sun exposure is necessary for the weeping fig?
+    - How much sunlight exposure is necessary for a weeping fig?
+    - How much sun does the weeping fig require?
+    - How much sun exposure is required?
+    - How much sun light does the weeping fig require?
+    - Which light conditions does the weeping fig need?
 - intent: faq/119
   examples: |
     - What is the soil type of the ficus tree?
     - What kind of soil does the weeping fig need?
     - What soil does a weeping fig need?
+    - Which soil conditions do weeping fig need?
+    - What soil is best for the weeping fig?
+    - which soil should i choose for the weeping fig?
+    - which soil type is best for the weeping fig?
 - intent: faq/120
   examples: |
     - What is the pH of the ficus tree?
@@ -829,20 +967,31 @@ nlu:
     - To where is the weeping fig native?
     - Where does the weeping fig come from?
     - Where does the weeping fig grow naturally?
+    - Wher is it native from?
+    - What is the origine of weeping fig
 - intent: faq/123
   examples: |
     - What is the Toxicity of the ficus tree?
     - How toxic is the weeping fig?
     - What is the toxicity of the weeping fig?
+    - How dangerous is the weeping fig?
+    - How dangerous is the plant?
 - intent: faq/124
   examples: |
     - What kind of conditions does weeping fig have a good tolerance for?
     - What is good for the weeping fig?
     - Which condition is good for the weeping fig?
+    - What conditions do weeping figs need?
 - intent: faq/125
   examples: |
     - How tall are weeping figs when grown indoors?
+    - How large do weeping figs get indoors?
     - How tall do weeping figs get indoors?
+    - How tall do weeping fig get in door?
+    - How big does a weeping fig get at home?
+    - How tall does a weeping fig get at home?
+    - How tall do weeping figs get inside?
+    - What is the maximal growth of a weeping fig?
 - intent: faq/126
   examples: |
     - How tall are weeping figs in tropical climates?
@@ -850,6 +999,7 @@ nlu:
     - How tall do weeping figs get outdoors?
     - How tall can weeping figs get?
     - How tall do weeping figs get?
+    - How big can weeping figs get?
 - intent: faq/127
   examples: |
     - What is weeping fig one of the best plants for indoors?
@@ -891,6 +1041,7 @@ nlu:
   examples: |
     - Where is the weeping fig often grown?
     - Where do I grow my weeping fig?
+    - Where does the weeping fig grow?
 - intent: faq/135
   examples: |
     - What can a weeping fig drop if it is moved?
@@ -911,6 +1062,8 @@ nlu:
     - What temperature is best for the weeping fig?
     - What temperature does the weeping fig need?
     - What is the best temperature for the weeping fig?
+    - which temperature is optimal for the weeping fig?
+    - What is the best temperature for it?
 - intent: faq/140
   examples: |
     - What will suffer if the indoor temperature drops below 70 degrees Fahrenheit?
@@ -920,6 +1073,10 @@ nlu:
     - What do weeping figs like?
     - What do weeping figs need?
     - What is good for weeping figs?
+    - What humidity condition if good for the weeping fig?
+    - What humidity condition is optimal for the weeping fig?
+    - what humidity for the weeping fig?
+    - How much humidity should the weeping fig have?
 - intent: faq/142
   examples: |
     - What happens to weeping figs if they become too dry?
@@ -977,6 +1134,9 @@ nlu:
     - When is it best to take a cutting?
     - When is the best time to cut the weeping fig?
     - When am I supposed to cut the weeping fig?
+    - When should i cut the weeping fig?
+    - At what time in the year should i cut the weeping fig?
+    - When do i need to cut the weeping fig?
 - intent: faq/154
   examples: |
     - What is the size of a cutting that contains at least two sets of leaves from the tip of a healthy branch?
@@ -1037,9 +1197,14 @@ nlu:
   examples: |
     - What do cats like to eat?
     - What do cats eat?
+    - What does a cat eat?
     - Which food do cats like?
     - What food is best for my cat?
     - How should i feed my cat
+    - What do they eat?
+    - I want to know how to feed my cat
+    - I would like to know how to feed a cat
+    - I want to know how to best feed my cat
 - intent: faq/166
   examples: |
     - Why do cats play with their prey?
@@ -1053,8 +1218,250 @@ nlu:
     - How old do cats get on average?
     - How old do cats get typically?
     - What is the lifespan of cats?
+    - What is the life span of cats?
+    - What is the life expectancy of cats?
+    - How long is the life expectancy of a cat?
+    - How long is a cat's year?
+    - How to convert cat years to human years?
+    - What is the life span?
+    - What is the lifespan?
+    - How long does it live?
 - intent: faq/168
   examples: |
     - How much water do weeping figs need?
     - How much humidity do weeping figs need?
     - How much water for the weeping fig?
+    - How often should i give water to the weeping fig?
+    - How many times a day should i water the weeping fig?
+- intent: faq/169
+  examples: |
+    - What do cats drink?
+    - What do they drink?
+    - What do I give my cat to drink?
+    - What does a cat like to drink?
+- intent: faq/170
+  examples: |
+    - Where are cats from?
+    - Where do cats originate from?
+    - what is the origin of cats?
+    - where do cats originally come from?
+    - Where do cats stem from?
+    - What is the home country of cats?
+- intent: faq/171
+  examples: |
+    - When can a cat be neutered?
+    - When can a cat be sterilized?
+    - When can a cat be spayed?
+    - When can a cat be castrated?
+    - at what age can a cat be neutered?
+    - at what age can a cat be sterilized?
+    - at what age can a cat be spayed?
+    - at what age can a cat be castrated?
+    - How old should a cat be to be sterilized?
+    - How old should a cat be to be neutered?
+    - How old should a cat be to be spayed?
+    - what is the the best age to castrate cats?
+    - how old should a cat be to be castrated?
+- intent: faq/172
+  examples: |
+    - How can I prevent cats from hunting birds?
+    - How to prevent the cat from hunting?
+    - How can I prevent my cat from endangering other species?
+    - what can I do to stop a cat from hunting birds?
+- intent: faq/173
+  examples: |
+    - How many times a day should i feed a cat?
+    - How much food does a cat need?
+    - How many times do i need to feed a cat?
+    - How much food do cats need?
+- intent: faq/174
+  examples: |
+    - When was the weeping fig introduced to Europe?
+    - How did the weeping fig spread?
+    - How was the weeping fig introduced?
+    - How was the weeping fig brought to Europe?
+    - How was the weeping fig brought to other countries?
+    - How did the weeping fig come here?
+    - How did the weeping fig come to Europe?
+- intent: faq/175
+  examples: |
+    - At what age can children be around cats?
+    - from what age on can children be with cats?
+    - What is the appropriate age for a child to have a cat?
+    - When can children have cats?
+- intent: faq/176
+  examples: |
+    - How can you establish a good relationship to a cat?
+    - How can i become friends with a cat?
+    - How can i make the cat like me??
+    - What can I do so that the cat likes me?
+    - How can I make my cat love me?
+    - How can I make my cat love me for who I am?
+    - How can I make the cat happy?
+- intent: faq/177
+  examples: |
+    - Which fertilizer is necessary for the weeping fig?
+    - which fertilizer does the weeping fig need?
+    - Which fertilizer does it need?
+    - What fertilizer should i give the weeping fig?
+- intent: faq/178
+  examples: |
+    - Where in the garden do i put the weeping fig?
+    - What place in the garden is good for the weeping fig?
+    - Where can i put the weeping fig?
+    - Where can I grow the weeping fig?
+    - where can i plant the weeping fig?
+    - Should the weeping fig be kept inside or outside?
+    - Should it be kept inside or outside?
+    - Should it stand inside or is it also possible to keep it outside?
+    - Should the weeping fig stand outside or inside?
+    - Should the weeping fig be grown inside or outside the house?
+    - Should the weeping fig be grown in the house or outside?
+    - Is it preferable to keep the weeping fig inside or can it also stay outside?
+- intent: faq/179
+  examples: |
+    - what does a cat need?
+    - What are the basic needs of cats?
+    - What fundamental needs does a cat have??
+    - What are the fundamental necessities of cat holding?
+    - What do cats need?
+    - What is necessary for cats?
+    - What is important when keeping cats?
+    - what should be considered when keeping cats?
+    - What to provide for a cat?
+- intent: faq/180
+  examples: |
+    - Which religion likes cats?
+    - which religion venerates cats?
+    - in which religion are cats highly respected?
+    - In which religion are cats sacred?
+    - In which religion are cats hold in high esteem?
+- intent: faq/181
+  examples: |
+    - How many babies can cats have?
+    - How many babies can they get?
+    - How many offspring can a cat have?
+    - How many kittens can cats get?
+    - How many kittens are in a litter?
+    - How many litters can a cat have per year?
+    - How many babies?
+    - How many baby cats can a cat produce?
+- intent: faq/182
+  examples: |
+    - How old do weeping figs get?
+    - How old can weeping figs get?
+    - What is the average life span of weeping figs?
+    - How old do weeping figs get on average?
+    - How old do weeping figs get typically?
+    - What is the lifespan of weeping figs?
+    - What is the life span of weeping figs?
+    - What is the life expectancy of weeping figs?
+    - How long is the life expectancy of a weeping fig?
+    - How long does a weeping fig live?
+    - How long is the life of a weeping fig?
+    - How long is the life span of a weeping fig?
+    - How long is the weeping fig going to live?
+    - How long is the plant going to live?
+- intent: faq/183
+  examples: |
+    - How popular are cats?
+    - Which one is more popular, cats or dogs?
+    - How wide-spread are cats as pets?
+    - What is better, cats or dogs?
+    - Do more people have cats or dogs at home?
+    - Do people prefer cats or dogs as pets?
+    - Do people prefer cats or dogs?
+    - Do you prefer cats or dogs?
+    - What is more popular, cats or dogs?
+    - Do more people have cats than dogs or vice versa?
+    - Do pet owners prefer cats or dogs?
+    - How many people have cats?
+    - How many people keep cats as pets?
+    - How many households have cats?
+    - How frequent are cats as pets?
+- intent: faq/184
+  examples: |
+    - How big should the bucket for the weeping fig be?
+    - How large should the bucket for the weeping fig be?
+    - How big should the pot for the weeping fig be?
+    - what size should the bucket have?
+    - what size should the pot have?
+    - How big should the pot be?
+    - How big should the bucket be?
+    - what pot does the weeping fig need?
+    - What bucket does the weeping fig need?
+    - What's the bucket size for the weeping fig?
+    - What is the pot size for the weeping fig?
+    - What kind of pot does the weeping fig need?
+    - What kind of bucket does the weeping fig need?
+- intent: faq/185
+  examples: |
+    - How deep are the roots of the weeping fig?
+    - How deep are the roots?
+    - How strong are the roots of the weeping fig?
+    - How strong are the roots?
+    - What roots does the weeping fig have?
+    - What are the characteristics of the roots of the weeping fig?
+    - Tell me about the roots of the weeping fig!
+    - How big are the roots of the weeping fig?
+    - How big are the roots?
+- intent: faq/186
+  examples: |
+    - How much does a weeping fig cost?
+    - What is the prize of the weeping fig?
+    - How much is a weeping fig worth?
+    - How much is a weeping fig?
+    - Where can I buy a weeping fig?
+    - How do I get a weeping fig?
+    - Where to buy weeping figs?
+    - how can you buy a weeping fig?
+    - where to go to buy a weeping fig?
+    - How to purchase a weeping fig?
+    - How can I purchase a weeping fig?
+    - In what shop can I purchase a weeping fig?
+    - What shops sell weeping figs?
+    - Where do they sell weeping figs?
+    - Where are weeping figs sold?
+    - Where can weeping figs be purchased?
+    - Where are weeping figs for sale?
+    - what stores sell weeping figs?
+    - What businesses sell weeping figs?
+    - In what stores are weeping figs for sale?
+    - In what store can I buy a weeping fig?
+    - In what store can I purchase a weeping fig?
+- intent: faq/187
+  examples: |
+    - Why is it called weeping fig?
+    - Why the name weeping fig?
+    - Where does the name weeping fig come from?
+    - Why is the weeping fig called weeping fig?
+    - Is the weeping fig a fig tree?
+    - To what genus does the weeping fig belong?
+    - To what botanical family does the weeping fig belong?
+    - In what botanical category does the weeping fig belong?
+    - What is the botanical taxonomy of the weeping fig?
+    - Where does the name weeping fig come from?
+    - What does the name weeping fig mean?
+    - Tell me about the name of the weeping fig
+- intent: faq/188
+  examples: |
+    - How can I prevent my cat from destroying my home?
+    - How can I prevent my cat from destroying my furniture?
+    - How can I prevent my cat from destroying my furnishings?
+    - How can I prevent my cat from destroying stuff?
+    - How can I prevent my cat from destroying things?
+    - How can I prevent my cat from destroying stuff at home?
+    - How can I prevent my cat from destroying things at home?
+    - Why do cats destroy things?
+    - Why do cats scratch?
+    - Why do cats scratch at furniture?
+    - Why do cats destroy furniture?
+    - Why do cats scratch everywhere at home?
+    - Why do cats damage furniture by scratching?
+    - Why do cats destroy things with scratching?
+    - Why do cats damage stuff with scratching?
+    - Why do cats scratch so much?
+    - Why do cats like to scratch?
+    - Why do cats like to scratch at furniture?
+    - Why does my cat like to scratch the sofa?
+    

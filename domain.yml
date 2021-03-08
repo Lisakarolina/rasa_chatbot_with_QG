@@ -2,10 +2,8 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-- faq:
-    is_retrieval_intent: true
-- chitchat:
-    is_retrieval_intent: true
+- faq
+- chitchat
 - greet
 - affirm
 - deny
@@ -14,74 +12,58 @@ intents:
 - wrapping_up
 - change_subject
 - bye
-
+- out_of_scope
+- nlu_fallback
 slots:
-  sensical:
-    type: text
-  informative:
-    type: text
   compare:
     type: text
+    influence_conversation: true
+  informative:
+    type: text
+    influence_conversation: true
+  requested_slot:
+    type: unfeaturized
+    influence_conversation: false
+  sensical:
+    type: text
+    influence_conversation: true
   sus_1:
     type: text
-  sus_2:
-    type: text
-  sus_3:
-    type: text
-  sus_4:
-    type: text
-  sus_5:
-    type: text
-  sus_6:
-    type: text
-  sus_7:
-    type: text
-  sus_8:
-    type: text
-  sus_9:
-    type: text
+    influence_conversation: true
   sus_10:
     type: text
-
-actions:
-  - action_submit
-  - save_qa
-
-forms:
-  evaluation_form:
-    sensical:
-      - type: from_text
-    informative:
-      - type: from_text
-    compare:
-      - type: from_text
-    sus_1:
-      - type: from_text
-    sus_2:
-      - type: from_text
-    sus_3:
-      - type: from_text
-    sus_4:
-      - type: from_text
-    sus_5:
-      - type: from_text
-    sus_6:
-      - type: from_text
-    sus_7:
-      - type: from_text
-    sus_8:
-      - type: from_text
-    sus_9:
-      - type: from_text
-    sus_10:
-      - type: from_text
-
-
+    influence_conversation: true
+  sus_2:
+    type: text
+    influence_conversation: true
+  sus_3:
+    type: text
+    influence_conversation: true
+  sus_4:
+    type: text
+    influence_conversation: true
+  sus_5:
+    type: text
+    influence_conversation: true
+  sus_6:
+    type: text
+    influence_conversation: true
+  sus_7:
+    type: text
+    influence_conversation: true
+  sus_8:
+    type: text
+    influence_conversation: true
+  sus_9:
+    type: text
+    influence_conversation: true
 responses:
   utter_please_rephrase:
   - text: I didn't quite get it. Could you please rephrase? Or ask me something else
-  - text: It seems I can't come up with an answer right now. Please rephrase or ask me something else
-  - text: I'm sorry, I don't have an answer. Do you want to try again and rephrase your question?
+  - text: It seems I can't come up with an answer right now. Please rephrase or ask
+      me something else
+  - text: I'm sorry, I don't have an answer. Do you want to try again and rephrase
+      your question?
   utter_deny_request:
   - text: It seems I can't help you here. Ask me something else
   utter_out_of_scope:
@@ -90,182 +72,188 @@ responses:
   utter_get_better:
   - text: I'm sorry to hear that. I hope you'll get better soon.
   utter_greet:
-  - text: "Hi, so glad you're willing to chat with me. There are two topics to which I can answer questions. Go ahead and ask me. And please tell me when you want to switch to the second topic. First topic: cats. Imagine you had to prepare a little presentation about cats. What would you want to know?"
-    image: "https://images.pexels.com/photos/615369/pexels-photo-615369.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+  - image: https://images.pexels.com/photos/615369/pexels-photo-615369.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+    text: "Hi, so glad you're willing to chat with me. There are two topics to which\
+      \ I can answer questions. Go ahead and ask me. And please tell me when you want\
+      \ to switch to the second topic. First topic: cats. Imagine you had to prepare\
+      \ a little presentation about cats. What would you want to know?"
   utter_intro_eval:
-  - text: Before you go, please help me with the evaluation. Please assign the following statements a number between 1 ("strongly disagree") and 5 ("strongly agree"). If you're undecided, choose 3
+  - text: Before you go, please help me with the evaluation. Please assign the following
+      statements a number between 1 ("strongly disagree") and 5 ("strongly agree").
+      If you're undecided, choose 3
   utter_ask_evaluation_form_sensical:
-  - text: The answers of the chatbot made sense
-    buttons:
-    - title: "1"
-      payload: "1"
-    - title: "2"
-      payload: "2"
-    - title: "3"
-      payload: "3"
-    - title: "4"
-      payload: "4"
-    - title: "5"
-      payload: "5"
-
+  - buttons:
+    - payload: '1'
+      title: '1'
+    - payload: '2'
+      title: '2'
+    - payload: '3'
+      title: '3'
+    - payload: '4'
+      title: '4'
+    - payload: '5'
+      title: '5'
+    text: The answers of the chatbot made sense
   utter_ask_evaluation_form_informative:
-  - text: The answers of the chatbot contained the kind of information I was asking for
-    buttons:
-    - title: "1"
-      payload: "1"
-    - title: "2"
-      payload: "2"
-    - title: "3"
-      payload: "3"
-    - title: "4"
-      payload: "4"
-    - title: "5"
-      payload: "5"
+  - buttons:
+    - payload: '1'
+      title: '1'
+    - payload: '2'
+      title: '2'
+    - payload: '3'
+      title: '3'
+    - payload: '4'
+      title: '4'
+    - payload: '5'
+      title: '5'
+    text: The answers of the chatbot contained the kind of information I was asking
+      for
   utter_ask_evaluation_form_compare:
-  - text: The answers concerning the both topics were of equal quality
-    buttons:
-    - title: "1"
-      payload: "1"
-    - title: "2"
-      payload: "2"
-    - title: "3"
-      payload: "3"
-    - title: "4"
-      payload: "4"
-    - title: "5"
-      payload: "5"
+  - buttons:
+    - payload: '1'
+      title: '1'
+    - payload: '2'
+      title: '2'
+    - payload: '3'
+      title: '3'
+    - payload: '4'
+      title: '4'
+    - payload: '5'
+      title: '5'
+    text: The answers concerning the both topics were of equal quality
   utter_ask_evaluation_form_sus_1:
-  - text: I think that I would like to use this chatbot frequently.
-    buttons:
-    - title: "1"
-      payload: "1"
-    - title: "2"
-      payload: "2"
-    - title: "3"
-      payload: "3"
-    - title: "4"
-      payload: "4"
-    - title: "5"
-      payload: "5"
+  - buttons:
+    - payload: '1'
+      title: '1'
+    - payload: '2'
+      title: '2'
+    - payload: '3'
+      title: '3'
+    - payload: '4'
+      title: '4'
+    - payload: '5'
+      title: '5'
+    text: I think that I would like to use this chatbot frequently.
   utter_ask_evaluation_form_sus_2:
-  - text: I found the chatbot unnecessarily complex.
-    buttons:
-    - title: "1"
-      payload: "1"
-    - title: "2"
-      payload: "2"
-    - title: "3"
-      payload: "3"
-    - title: "4"
-      payload: "4"
-    - title: "5"
-      payload: "5"
+  - buttons:
+    - payload: '1'
+      title: '1'
+    - payload: '2'
+      title: '2'
+    - payload: '3'
+      title: '3'
+    - payload: '4'
+      title: '4'
+    - payload: '5'
+      title: '5'
+    text: I found the chatbot unnecessarily complex.
   utter_ask_evaluation_form_sus_3:
-  - text: I thought the chatbot was easy to use.
-    buttons:
-    - title: "1"
-      payload: "1"
-    - title: "2"
-      payload: "2"
-    - title: "3"
-      payload: "3"
-    - title: "4"
-      payload: "4"
-    - title: "5"
-      payload: "5"
+  - buttons:
+    - payload: '1'
+      title: '1'
+    - payload: '2'
+      title: '2'
+    - payload: '3'
+      title: '3'
+    - payload: '4'
+      title: '4'
+    - payload: '5'
+      title: '5'
+    text: I thought the chatbot was easy to use.
   utter_ask_evaluation_form_sus_4:
-  - text: I think that I would need the support of a technical person to be able to use this chatbot.
-    buttons:
-    - title: "1"
-      payload: "1"
-    - title: "2"
-      payload: "2"
-    - title: "3"
-      payload: "3"
-    - title: "4"
-      payload: "4"
-    - title: "5"
-      payload: "5"
+  - buttons:
+    - payload: '1'
+      title: '1'
+    - payload: '2'
+      title: '2'
+    - payload: '3'
+      title: '3'
+    - payload: '4'
+      title: '4'
+    - payload: '5'
+      title: '5'
+    text: I think that I would need the support of a technical person to be able to
+      use this chatbot.
   utter_ask_evaluation_form_sus_5:
-  - text: I found the various functions in this chatbot were well integrated.
-    buttons:
-    - title: "1"
-      payload: "1"
-    - title: "2"
-      payload: "2"
-    - title: "3"
-      payload: "3"
-    - title: "4"
-      payload: "4"
-    - title: "5"
-      payload: "5"
+  - buttons:
+    - payload: '1'
+      title: '1'
+    - payload: '2'
+      title: '2'
+    - payload: '3'
+      title: '3'
+    - payload: '4'
+      title: '4'
+    - payload: '5'
+      title: '5'
+    text: I found the various functions in this chatbot were well integrated.
   utter_ask_evaluation_form_sus_6:
-  - text: I thought there was too much inconsistency in this chatbot.
-    buttons:
-    - title: "1"
-      payload: "1"
-    - title: "2"
-      payload: "2"
-    - title: "3"
-      payload: "3"
-    - title: "4"
-      payload: "4"
-    - title: "5"
-      payload: "5"
+  - buttons:
+    - payload: '1'
+      title: '1'
+    - payload: '2'
+      title: '2'
+    - payload: '3'
+      title: '3'
+    - payload: '4'
+      title: '4'
+    - payload: '5'
+      title: '5'
+    text: I thought there was too much inconsistency in this chatbot.
   utter_ask_evaluation_form_sus_7:
-  - text: I would imagine that most people would learn to use this chatbot very quickly.
-    buttons:
-    - title: "1"
-      payload: "1"
-    - title: "2"
-      payload: "2"
-    - title: "3"
-      payload: "3"
-    - title: "4"
-      payload: "4"
-    - title: "5"
-      payload: "5"
+  - buttons:
+    - payload: '1'
+      title: '1'
+    - payload: '2'
+      title: '2'
+    - payload: '3'
+      title: '3'
+    - payload: '4'
+      title: '4'
+    - payload: '5'
+      title: '5'
+    text: I would imagine that most people would learn to use this chatbot very quickly.
   utter_ask_evaluation_form_sus_8:
-  - text: I found the chatbot very awkward to use.
-    buttons:
-    - title: "1"
-      payload: "1"
-    - title: "2"
-      payload: "2"
-    - title: "3"
-      payload: "3"
-    - title: "4"
-      payload: "4"
-    - title: "5"
-      payload: "5"
+  - buttons:
+    - payload: '1'
+      title: '1'
+    - payload: '2'
+      title: '2'
+    - payload: '3'
+      title: '3'
+    - payload: '4'
+      title: '4'
+    - payload: '5'
+      title: '5'
+    text: I found the chatbot very awkward to use.
   utter_ask_evaluation_form_sus_9:
-  - text: I felt very confident using the chatbot.
-    buttons:
-    - title: "1"
-      payload: "1"
-    - title: "2"
-      payload: "2"
-    - title: "3"
-      payload: "3"
-    - title: "4"
-      payload: "4"
-    - title: "5"
-      payload: "5"
+  - buttons:
+    - payload: '1'
+      title: '1'
+    - payload: '2'
+      title: '2'
+    - payload: '3'
+      title: '3'
+    - payload: '4'
+      title: '4'
+    - payload: '5'
+      title: '5'
+    text: I felt very confident using the chatbot.
   utter_ask_evaluation_form_sus_10:
-  - text: I needed to learn a lot of things before I could get going with this chatbot.
-    buttons:
-    - title: "1"
-      payload: "1"
-    - title: "2"
-      payload: "2"
-    - title: "3"
-      payload: "3"
-    - title: "4"
-      payload: "4"
-    - title: "5"
-      payload: "5"
+  - buttons:
+    - payload: '1'
+      title: '1'
+    - payload: '2'
+      title: '2'
+    - payload: '3'
+      title: '3'
+    - payload: '4'
+      title: '4'
+    - payload: '5'
+      title: '5'
+    text: I needed to learn a lot of things before I could get going with this chatbot.
   utter_thanks:
-  - text: Thank you for your evaluation. You can leave now
+  - text: Thank you for your evaluation. You can now close the window.
   utter_chitchat/bot_challenge:
   - text: Yes
   utter_chitchat/how_are_you:
@@ -275,8 +263,9 @@ responses:
   utter_goodbye:
   - text: Bye
   utter_second_topic:
-  - text: "OK, here's the second topic: A plant called weeping fig. Imagine you would want to get one for your home. What would you want to know about it?"
-    image: "https://images.pexels.com/photos/4050790/pexels-photo-4050790.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+  - image: https://images.pexels.com/photos/4050790/pexels-photo-4050790.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+    text: "OK, here's the second topic: A plant called weeping fig. Imagine you would\
+      \ want to get one for your home. What would you want to know about it?"
   utter_faq/0:
   - text: house cat, a farm cat or a feral cat
   utter_faq/1:
@@ -348,7 +337,8 @@ responses:
   utter_faq/34:
   - text: the skin and fur
   utter_faq/35:
-  - text: hunting or self-defense, climbing, kneading, or for extra traction on soft surfaces
+  - text: hunting or self-defense, climbing, kneading, or for extra traction on soft
+      surfaces
   utter_faq/36:
   - text: four
   utter_faq/37:
@@ -458,7 +448,8 @@ responses:
   utter_faq/89:
   - text: '12'
   utter_faq/90:
-  - text: aggression, territory marking (spraying urine) in males and yowling (calling) in females
+  - text: aggression, territory marking (spraying urine) in males and yowling (calling)
+      in females
   utter_faq/91:
   - text: 80%
   utter_faq/92:
@@ -466,11 +457,12 @@ responses:
   utter_faq/93:
   - text: Creme Puff
   utter_faq/94:
-  - text: worms and fleas
+  - text: You can vaccinate a cat to prevent worms and fleas.
   utter_faq/95:
   - text: small islands with no human inhabitants
   utter_faq/96:
-  - text: forests, grasslands, tundra, coastal areas, agricultural land, scrublands, urban areas, and wetlands
+  - text: forests, grasslands, tundra, coastal areas, agricultural land, scrublands,
+      urban areas, and wetlands
   utter_faq/97:
   - text: Feral cats
   utter_faq/98:
@@ -530,7 +522,7 @@ responses:
   utter_faq/125:
   - text: 3 to 6 feet
   utter_faq/126:
-  - text: '60'
+  - text: 60 feet
   utter_faq/127:
   - text: improving air quality
   utter_faq/128:
@@ -544,7 +536,8 @@ responses:
   utter_faq/132:
   - text: Leaf dropping
   utter_faq/133:
-  - text: a bright room with plenty of indirect light, and perhaps even a little direct sun in the morning
+  - text: a bright room with plenty of indirect light, and perhaps even a little direct
+      sun in the morning
   utter_faq/134:
   - text: semi-shady
   utter_faq/135:
@@ -556,7 +549,8 @@ responses:
   utter_faq/138:
   - text: leaves
   utter_faq/139:
-  - text: The weeping fig does best with nighttime temperatures between 65 and 70 degrees Fahrenheit and daytime temperatures between 75 and 85 degrees Fahrenheit.
+  - text: The weeping fig does best with nighttime temperatures between 65 and 70
+      degrees Fahrenheit and daytime temperatures between 75 and 85 degrees Fahrenheit.
   utter_faq/140:
   - text: weeping figs
   utter_faq/141:
@@ -604,14 +598,126 @@ responses:
   utter_faq/162:
   - text: Felis catus
   utter_faq/163:
-  - text: It averages about 46 cm (18 in) in head-to-body length and 23–25 cm (9–10 in) in height, with about 30 cm (12 in) long tails. Males are larger than females
+  - text: It averages about 46 cm (18 in) in head-to-body length and 23–25 cm (9–10
+      in) in height, with about 30 cm (12 in) long tails. Males are larger than females
   utter_faq/164:
   - text: Cats hunt small prey, primarily birds and rodents
   utter_faq/165:
-  - text: They select food based on its temperature, smell and texture; they dislike chilled foods and respond most strongly to moist foods rich in amino acids, which are similar to meat.
+  - text: They select food based on its temperature, smell and texture; they dislike
+      chilled foods and respond most strongly to moist foods rich in amino acids,
+      which are similar to meat.
   utter_faq/166:
-  - text: This cat and mouse behavior is due to an instinctive imperative to ensure that the prey is weak enough to be killed without endangering the cat
+  - text: This cat and mouse behavior is due to an instinctive imperative to ensure
+      that the prey is weak enough to be killed without endangering the cat
   utter_faq/167:
-  - text: The average lifespan of pet cats has risen in recent decades. In the early 1980s, it was about seven years, rising to 9.4 years in 1995 and 15.1 years in 2018
+  - text: The average lifespan of pet cats has risen in recent decades. In the early
+      1980s, it was about seven years, rising to 9.4 years in 1995 and 15.1 years
+      in 2018. As a rule of thumg, if you multiply the cat's age by the factor 6 or
+      7, you get roughly the equivalent of human age.
   utter_faq/168:
-  - text: Keep the plant steadily moist, but do not allow it to sit in water or it will drop leaves and may develop root rot
+  - text: Keep the plant steadily moist, but do not allow it to sit in water or it
+      will drop leaves and may develop root rot
+  utter_faq/169:
+  - text: Cats drink clean, fresh water. Young kittens drink milk.
+  utter_faq/170:
+  - text: Cats where most likely first tamed in the Middle East and spread from there
+      with the propagation of agricultural practices.
+  utter_faq/171:
+  - text: It is generally considered safe for kittens as young as eight weeks old
+      to be spayed or neutered.
+  utter_faq/172:
+  - text: If you don't want your cats to hunt birds or other animals you can get a
+      collar with a bell that warns the prey before the cat can hunt it down. Or keep
+      the cat inside if this is an option.
+  utter_faq/173:
+  - text: How often you need to feed a cat depends from age and health of the cat.
+      A kitten needs more food per body weight and should be fed three times a day,
+      while for cats older than six months two meals per day should be enough.
+  utter_faq/174:
+  - text: The weeping fig is originally from Asia but was spread globally as a decorative
+      and hedge plant. It was introduced to England by Philip Miller in 1757 and by
+      the beginning of the twentieth century it was present in the US, Australia,
+      the Caribbean, Sumatra and the Philippines.
+  utter_faq/175:
+  - text: Babies and toddlers should not be left alone with cats because they don't
+      know when they hurt the cat. From school age on children can understand what
+      cats need and can slowly begin to take responsibility for a pet.
+  utter_faq/176:
+  - text: Be nice to the cat and feed her. This should be enough. Cats love everybody
+      who is feeding them.
+  utter_faq/177:
+  - text: The weeping fig needs fertilizer that is rich in nitrogen. Amount of fertilizer
+      depends on age and size. In general, give at leat a month during growing season.
+  utter_faq/178:
+  - text: The weeping fig likes low elevations. It thrives in a sunny place in lots
+      of different kind of soils (clay, sand, loam) and with different pH-levels.
+      It doesn't take frost very well, so in colder climates it should be grown inside.
+  utter_faq/179:
+  - text: A cat needs food, shelter and love. If you keep the cat indoors, you might
+      also consider adding a litter box and a scratching option.
+  utter_faq/180:
+  - text: Cats were holy animals in Ancient Egypt. They have a special role in shintoism
+      and Chinese folk religion. Although no animals are sacred in Islam, cats are
+      revered by muslims.
+  utter_faq/181:
+  - text: Female domestic cats can have kittens from spring to late autumn, with litter
+      sizes often ranging from two to five kittens. A cat can have several litters
+      per season.
+  utter_faq/182:
+  - text: The weeping fig lives from 40 to 150 years.
+  utter_faq/183:
+  - text: Cats belong to the most popular pets. In Germany, there are more households
+      with cats than with dogs. Whether cats are preferred to dogs as pets depends
+      from factors like urbanity and economic situation.
+  utter_faq/184:
+  - text: The pot size should be in proportion to the growth of the plant. If the
+      roots get too big for the pot, transfer the plant to a new one that is about
+      5 or 6 cm larger than the old one.
+  utter_faq/185:
+  - text: The roots of the weeping fig grow fast and are very strong. They can even
+      lift sidewalks and damage buildings so when growing them outdoors it is best
+      to plant them a few meters away from the house.
+  utter_faq/186:
+  - text: Weeping figs can be purchased in gardening shops and similar specialised
+      stores. They can also be bought via mail-order. The prize range lies between
+      a few dollars to 100 dollars depending from height and overall state of the
+      plant.
+  utter_faq/187:
+  - text: The weeping fig (ficus benjamina) belongs to the genus ficus and the family
+      Moraceae. The common name references its drooping leaves. As a fig tree it could
+      bear fruits but rarely does so when kept indoors because of the absence of special
+      wasps needed for pollination.
+  utter_faq/188:
+  - text: Cats scratch to mark their territory and to sharpen their claws. Provide
+      a scratching tree to prevent them from destroying furniture and carpets.
+actions:
+- action_submit
+- save_qa
+forms:
+  evaluation_form:
+    compare:
+    - type: from_text
+    informative:
+    - type: from_text
+    sensical:
+    - type: from_text
+    sus_1:
+    - type: from_text
+    sus_10:
+    - type: from_text
+    sus_2:
+    - type: from_text
+    sus_3:
+    - type: from_text
+    sus_4:
+    - type: from_text
+    sus_5:
+    - type: from_text
+    sus_6:
+    - type: from_text
+    sus_7:
+    - type: from_text
+    sus_8:
+    - type: from_text
+    sus_9:
+    - type: from_text
