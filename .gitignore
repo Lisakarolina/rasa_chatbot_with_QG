@@ -3,3 +3,4 @@ events.db-wal
 __pycache__/
 venv/
 own_tmp/
+*ngrok*
